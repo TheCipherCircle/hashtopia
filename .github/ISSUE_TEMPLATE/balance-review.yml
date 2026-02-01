@@ -1,0 +1,110 @@
+name: Balance Review
+description: XP curves, difficulty progression, rewards, pacing issues
+title: "[BALANCE] "
+labels: ["balance-review", "jinx-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Balance Review
+        *Jinx's Queue - Pattern Analysis*
+
+        For XP, difficulty curves, reward pacing, and progression feel.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - SpellEngine / Dread Citadel
+        - HashChampions
+    validations:
+      required: true
+
+  - type: dropdown
+    id: balance-type
+    attributes:
+      label: Balance Type
+      options:
+        - XP / Leveling curve
+        - Difficulty progression
+        - Reward pacing
+        - Time-to-complete
+        - Skill unlock order
+        - Competition fairness
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where in the game?
+      placeholder: "Chapter 2-3 transition / Week 5 challenges"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue
+    attributes:
+      label: What's the problem?
+      options:
+        - Too easy / No challenge
+        - Too hard / Frustrating
+        - Rewards feel unrewarding
+        - Progression feels grindy
+        - Difficulty spike
+        - Difficulty drop
+        - Unfair advantage possible
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What feels off and why?
+      placeholder: |
+        After completing Chapter 2, Chapter 3 feels like a massive spike.
+        Went from solving puzzles in 2-3 minutes to being stuck for 20+.
+    validations:
+      required: true
+
+  - type: textarea
+    id: data
+    attributes:
+      label: Data (if available)
+      description: Times, scores, XP amounts, etc.
+      placeholder: |
+        Chapter 2 average: 3 min/puzzle
+        Chapter 3 first puzzle: 25 min
+        XP earned: 50 vs expected 100
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Fix
+      description: How would you adjust it?
+      placeholder: |
+        Add a bridge puzzle between Ch2 and Ch3
+        Or reduce Ch3 opener difficulty by 30%
+    validations:
+      required: false
+
+  - type: input
+    id: build
+    attributes:
+      label: Build Version
+      placeholder: v1.0-alpha
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name
+    validations:
+      required: true

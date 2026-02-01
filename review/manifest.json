@@ -1,0 +1,2118 @@
+{
+  "generated": "2026-02-01T09:42:22.395487",
+  "generator": "generate-manifest.py",
+  "version": "1.0",
+  "projects": {
+    "spellengine": {
+      "name": "SpellEngine / Dread Citadel",
+      "basePath": "/Users/petermckernan/Projects/SpellEngine",
+      "categories": {
+        "music": {
+          "path": "assets/audio/music",
+          "reviewType": "audio",
+          "assets": [
+            {
+              "name": "Dread Citadel.mp3",
+              "path": "assets/audio/music/Dread Citadel.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/Dread Citadel.mp3",
+              "reviewType": "audio",
+              "size": 4687279,
+              "modified": "2026-02-01T07:53:05.078334",
+              "hash": "257b903e",
+              "dimensions": null
+            },
+            {
+              "name": "music_awakening_crescendo.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_awakening_crescendo.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_awakening_crescendo.mp3",
+              "reviewType": "audio",
+              "size": 3738347,
+              "modified": "2026-02-01T07:53:05.089211",
+              "hash": "f77af34a",
+              "dimensions": null
+            },
+            {
+              "name": "music_awakening_intro.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_awakening_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_awakening_intro.mp3",
+              "reviewType": "audio",
+              "size": 3595321,
+              "modified": "2026-02-01T07:53:05.095119",
+              "hash": "22f55f25",
+              "dimensions": null
+            },
+            {
+              "name": "music_awakening_mystery.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_awakening_mystery.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_awakening_mystery.mp3",
+              "reviewType": "audio",
+              "size": 3784099,
+              "modified": "2026-02-01T07:53:05.099500",
+              "hash": "5778ec2e",
+              "dimensions": null
+            },
+            {
+              "name": "music_chapter_0_complete.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_chapter_0_complete.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_chapter_0_complete.mp3",
+              "reviewType": "audio",
+              "size": 4376375,
+              "modified": "2026-02-01T07:53:05.110455",
+              "hash": "7bb6efbc",
+              "dimensions": null
+            },
+            {
+              "name": "music_circle_initiation.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_circle_initiation.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_circle_initiation.mp3",
+              "reviewType": "audio",
+              "size": 3635028,
+              "modified": "2026-02-01T07:53:05.116830",
+              "hash": "16374cd3",
+              "dimensions": null
+            },
+            {
+              "name": "music_citadel_beckons.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_citadel_beckons.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_citadel_beckons.mp3",
+              "reviewType": "audio",
+              "size": 5000746,
+              "modified": "2026-02-01T07:53:05.130000",
+              "hash": "0a103a0c",
+              "dimensions": null
+            },
+            {
+              "name": "music_initiate_journey.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_initiate_journey.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_initiate_journey.mp3",
+              "reviewType": "audio",
+              "size": 3987041,
+              "modified": "2026-02-01T07:53:05.138229",
+              "hash": "c38be35d",
+              "dimensions": null
+            },
+            {
+              "name": "music_initiate_training_1.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_initiate_training_1.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_initiate_training_1.mp3",
+              "reviewType": "audio",
+              "size": 3636449,
+              "modified": "2026-02-01T07:53:05.144267",
+              "hash": "7a9484bb",
+              "dimensions": null
+            },
+            {
+              "name": "music_initiate_training_2.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_initiate_training_2.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_initiate_training_2.mp3",
+              "reviewType": "audio",
+              "size": 3914573,
+              "modified": "2026-02-01T07:53:05.150367",
+              "hash": "dd85a0bc",
+              "dimensions": null
+            },
+            {
+              "name": "music_null_cipher_appears.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_null_cipher_appears.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_null_cipher_appears.mp3",
+              "reviewType": "audio",
+              "size": 3805171,
+              "modified": "2026-02-01T07:53:05.159836",
+              "hash": "37093c61",
+              "dimensions": null
+            },
+            {
+              "name": "music_null_cipher_guide.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_null_cipher_guide.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_null_cipher_guide.mp3",
+              "reviewType": "audio",
+              "size": 2734073,
+              "modified": "2026-02-01T07:53:05.167643",
+              "hash": "e7a84c7c",
+              "dimensions": null
+            },
+            {
+              "name": "music_null_cipher_teaching.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_null_cipher_teaching.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_null_cipher_teaching.mp3",
+              "reviewType": "audio",
+              "size": 2702599,
+              "modified": "2026-02-01T07:53:05.173110",
+              "hash": "574d8363",
+              "dimensions": null
+            },
+            {
+              "name": "music_password_truth.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_password_truth.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_password_truth.mp3",
+              "reviewType": "audio",
+              "size": 4701211,
+              "modified": "2026-02-01T07:53:05.183704",
+              "hash": "6b3e234b",
+              "dimensions": null
+            },
+            {
+              "name": "music_pattern_revelation.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_pattern_revelation.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_pattern_revelation.mp3",
+              "reviewType": "audio",
+              "size": 2783100,
+              "modified": "2026-02-01T07:53:05.193540",
+              "hash": "df09985e",
+              "dimensions": null
+            },
+            {
+              "name": "music_tutorial_ambient.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_tutorial_ambient.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_tutorial_ambient.mp3",
+              "reviewType": "audio",
+              "size": 1808951,
+              "modified": "2026-02-01T07:53:05.197817",
+              "hash": "0423a31d",
+              "dimensions": null
+            },
+            {
+              "name": "music_void_whispers.mp3",
+              "path": "assets/audio/music/chapters/ch0_awakening/music_void_whispers.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch0_awakening/music_void_whispers.mp3",
+              "reviewType": "audio",
+              "size": 3735653,
+              "modified": "2026-02-01T07:53:05.210200",
+              "hash": "df7b0010",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_gatekeeper_battle.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_boss_gatekeeper_battle.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_boss_gatekeeper_battle.mp3",
+              "reviewType": "audio",
+              "size": 6518937,
+              "modified": "2026-02-01T07:53:05.223069",
+              "hash": "27b0225e",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_gatekeeper_epic.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_boss_gatekeeper_epic.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_boss_gatekeeper_epic.mp3",
+              "reviewType": "audio",
+              "size": 6353094,
+              "modified": "2026-02-01T07:53:05.238594",
+              "hash": "85112c6b",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_gatekeeper_intro.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_boss_gatekeeper_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_boss_gatekeeper_intro.mp3",
+              "reviewType": "audio",
+              "size": 4370314,
+              "modified": "2026-02-01T07:53:05.249837",
+              "hash": "3af089f2",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_gatekeeper_phase2.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_boss_gatekeeper_phase2.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_boss_gatekeeper_phase2.mp3",
+              "reviewType": "audio",
+              "size": 5413947,
+              "modified": "2026-02-01T07:53:05.263366",
+              "hash": "3d82c01b",
+              "dimensions": null
+            },
+            {
+              "name": "music_breach_attempt.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_breach_attempt.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_breach_attempt.mp3",
+              "reviewType": "audio",
+              "size": 4933773,
+              "modified": "2026-02-01T07:53:05.278847",
+              "hash": "2f854d7c",
+              "dimensions": null
+            },
+            {
+              "name": "music_chapter_1_complete.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_chapter_1_complete.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_chapter_1_complete.mp3",
+              "reviewType": "audio",
+              "size": 4088419,
+              "modified": "2026-02-01T07:53:05.288031",
+              "hash": "b4e5a603",
+              "dimensions": null
+            },
+            {
+              "name": "music_checkpoint_dread.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_checkpoint_dread.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_checkpoint_dread.mp3",
+              "reviewType": "audio",
+              "size": 4627569,
+              "modified": "2026-02-01T07:53:05.299928",
+              "hash": "0b6cb230",
+              "dimensions": null
+            },
+            {
+              "name": "music_cryptic_symbols.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_cryptic_symbols.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_cryptic_symbols.mp3",
+              "reviewType": "audio",
+              "size": 3117696,
+              "modified": "2026-02-01T07:53:05.306561",
+              "hash": "8befd3bf",
+              "dimensions": null
+            },
+            {
+              "name": "music_exploration.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_exploration.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_exploration.mp3",
+              "reviewType": "audio",
+              "size": 3612859,
+              "modified": "2026-02-01T07:53:05.316011",
+              "hash": "557e68aa",
+              "dimensions": null
+            },
+            {
+              "name": "music_fortress_approach.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_fortress_approach.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_fortress_approach.mp3",
+              "reviewType": "audio",
+              "size": 5125298,
+              "modified": "2026-02-01T07:53:05.327139",
+              "hash": "85385553",
+              "dimensions": null
+            },
+            {
+              "name": "music_gatekeeper_stirs.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_gatekeeper_stirs.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_gatekeeper_stirs.mp3",
+              "reviewType": "audio",
+              "size": 4724058,
+              "modified": "2026-02-01T07:53:05.333872",
+              "hash": "af69e415",
+              "dimensions": null
+            },
+            {
+              "name": "music_outer_gates_intro.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_outer_gates_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_outer_gates_intro.mp3",
+              "reviewType": "audio",
+              "size": 3760119,
+              "modified": "2026-02-01T07:53:05.341841",
+              "hash": "658d5816",
+              "dimensions": null
+            },
+            {
+              "name": "music_outer_ward.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_outer_ward.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_outer_ward.mp3",
+              "reviewType": "audio",
+              "size": 3770134,
+              "modified": "2026-02-01T07:53:05.353246",
+              "hash": "7182bfb8",
+              "dimensions": null
+            },
+            {
+              "name": "music_servants_path.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_servants_path.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_servants_path.mp3",
+              "reviewType": "audio",
+              "size": 2831902,
+              "modified": "2026-02-01T07:53:05.359814",
+              "hash": "fc235ebf",
+              "dimensions": null
+            },
+            {
+              "name": "music_tension_building.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_tension_building.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_tension_building.mp3",
+              "reviewType": "audio",
+              "size": 4446820,
+              "modified": "2026-02-01T07:53:05.369760",
+              "hash": "c230dda6",
+              "dimensions": null
+            },
+            {
+              "name": "music_wordlist_whispers.mp3",
+              "path": "assets/audio/music/chapters/ch1_outer_gates/music_wordlist_whispers.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch1_outer_gates/music_wordlist_whispers.mp3",
+              "reviewType": "audio",
+              "size": 4850407,
+              "modified": "2026-02-01T07:53:05.381543",
+              "hash": "5c37c54b",
+              "dimensions": null
+            },
+            {
+              "name": "music_ancient_vaults.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_ancient_vaults.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_ancient_vaults.mp3",
+              "reviewType": "audio",
+              "size": 2852584,
+              "modified": "2026-02-01T07:53:05.387263",
+              "hash": "6b437fa9",
+              "dimensions": null
+            },
+            {
+              "name": "music_bone_corridors.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_bone_corridors.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_bone_corridors.mp3",
+              "reviewType": "audio",
+              "size": 3063837,
+              "modified": "2026-02-01T07:53:05.392777",
+              "hash": "3f978ae4",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_crypt_guardian_battle.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_boss_crypt_guardian_battle.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_boss_crypt_guardian_battle.mp3",
+              "reviewType": "audio",
+              "size": 3298212,
+              "modified": "2026-02-01T07:53:05.400813",
+              "hash": "e4090e74",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_crypt_guardian_epic.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_boss_crypt_guardian_epic.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_boss_crypt_guardian_epic.mp3",
+              "reviewType": "audio",
+              "size": 5619058,
+              "modified": "2026-02-01T07:53:05.411488",
+              "hash": "5087b453",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_crypt_guardian_intro.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_boss_crypt_guardian_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_boss_crypt_guardian_intro.mp3",
+              "reviewType": "audio",
+              "size": 4878180,
+              "modified": "2026-02-01T07:53:05.420559",
+              "hash": "08758467",
+              "dimensions": null
+            },
+            {
+              "name": "music_chapter_2_complete.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_chapter_2_complete.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_chapter_2_complete.mp3",
+              "reviewType": "audio",
+              "size": 5716461,
+              "modified": "2026-02-01T07:53:05.434346",
+              "hash": "66c4a006",
+              "dimensions": null
+            },
+            {
+              "name": "music_cipher_weave.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_cipher_weave.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_cipher_weave.mp3",
+              "reviewType": "audio",
+              "size": 3771058,
+              "modified": "2026-02-01T07:53:05.454315",
+              "hash": "f9f916f3",
+              "dimensions": null
+            },
+            {
+              "name": "music_crypt_exploration.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_crypt_exploration.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_crypt_exploration.mp3",
+              "reviewType": "audio",
+              "size": 4148530,
+              "modified": "2026-02-01T07:53:05.473628",
+              "hash": "d5a746fa",
+              "dimensions": null
+            },
+            {
+              "name": "music_crypt_guardian_stirs.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_crypt_guardian_stirs.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_crypt_guardian_stirs.mp3",
+              "reviewType": "audio",
+              "size": 4650852,
+              "modified": "2026-02-01T07:53:05.492640",
+              "hash": "1dbfd82d",
+              "dimensions": null
+            },
+            {
+              "name": "music_crypts_intro.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_crypts_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_crypts_intro.mp3",
+              "reviewType": "audio",
+              "size": 2489919,
+              "modified": "2026-02-01T07:53:05.502511",
+              "hash": "e01b8a18",
+              "dimensions": null
+            },
+            {
+              "name": "music_deep_descent.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_deep_descent.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_deep_descent.mp3",
+              "reviewType": "audio",
+              "size": 2448300,
+              "modified": "2026-02-01T07:53:05.508484",
+              "hash": "b65193a8",
+              "dimensions": null
+            },
+            {
+              "name": "music_echo_chambers.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_echo_chambers.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_echo_chambers.mp3",
+              "reviewType": "audio",
+              "size": 2982713,
+              "modified": "2026-02-01T07:53:05.515431",
+              "hash": "f7baa2bf",
+              "dimensions": null
+            },
+            {
+              "name": "music_mask_patterns.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_mask_patterns.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_mask_patterns.mp3",
+              "reviewType": "audio",
+              "size": 3247557,
+              "modified": "2026-02-01T07:53:05.525272",
+              "hash": "5e71a669",
+              "dimensions": null
+            },
+            {
+              "name": "music_phosphorescent_glow.mp3",
+              "path": "assets/audio/music/chapters/ch2_crypts/music_phosphorescent_glow.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch2_crypts/music_phosphorescent_glow.mp3",
+              "reviewType": "audio",
+              "size": 2753819,
+              "modified": "2026-02-01T07:53:05.531937",
+              "hash": "c46e1fbd",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_right_hand_battle.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_boss_right_hand_battle.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_boss_right_hand_battle.mp3",
+              "reviewType": "audio",
+              "size": 3574572,
+              "modified": "2026-02-01T07:53:05.540138",
+              "hash": "15a2554d",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_right_hand_epic.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_boss_right_hand_epic.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_boss_right_hand_epic.mp3",
+              "reviewType": "audio",
+              "size": 3411269,
+              "modified": "2026-02-01T07:53:05.551389",
+              "hash": "ee123dec",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_right_hand_intro.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_boss_right_hand_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_boss_right_hand_intro.mp3",
+              "reviewType": "audio",
+              "size": 6079958,
+              "modified": "2026-02-01T07:53:05.566593",
+              "hash": "d7689e4a",
+              "dimensions": null
+            },
+            {
+              "name": "music_chapter_3_complete.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_chapter_3_complete.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_chapter_3_complete.mp3",
+              "reviewType": "audio",
+              "size": 3382733,
+              "modified": "2026-02-01T07:53:05.574643",
+              "hash": "86f021a9",
+              "dimensions": null
+            },
+            {
+              "name": "music_combat_surge.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_combat_surge.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_combat_surge.mp3",
+              "reviewType": "audio",
+              "size": 3238764,
+              "modified": "2026-02-01T07:53:05.580338",
+              "hash": "cabd33e6",
+              "dimensions": null
+            },
+            {
+              "name": "music_inner_sanctum_intro.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_inner_sanctum_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_inner_sanctum_intro.mp3",
+              "reviewType": "audio",
+              "size": 5599836,
+              "modified": "2026-02-01T07:53:05.590255",
+              "hash": "92dea9dd",
+              "dimensions": null
+            },
+            {
+              "name": "music_power_corridor.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_power_corridor.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_power_corridor.mp3",
+              "reviewType": "audio",
+              "size": 3713486,
+              "modified": "2026-02-01T07:53:05.605443",
+              "hash": "89d787a4",
+              "dimensions": null
+            },
+            {
+              "name": "music_sanctum_combat.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_sanctum_combat.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_sanctum_combat.mp3",
+              "reviewType": "audio",
+              "size": 4714620,
+              "modified": "2026-02-01T07:53:05.616910",
+              "hash": "fa397b5f",
+              "dimensions": null
+            },
+            {
+              "name": "music_sanctum_prowl.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_sanctum_prowl.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_sanctum_prowl.mp3",
+              "reviewType": "audio",
+              "size": 3449564,
+              "modified": "2026-02-01T07:53:05.624522",
+              "hash": "8581d162",
+              "dimensions": null
+            },
+            {
+              "name": "music_shield_stance.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_shield_stance.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_shield_stance.mp3",
+              "reviewType": "audio",
+              "size": 3696636,
+              "modified": "2026-02-01T07:53:05.631190",
+              "hash": "449c54e0",
+              "dimensions": null
+            },
+            {
+              "name": "music_spectral_guards.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_spectral_guards.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_spectral_guards.mp3",
+              "reviewType": "audio",
+              "size": 3300694,
+              "modified": "2026-02-01T07:53:05.639293",
+              "hash": "73d8b0c8",
+              "dimensions": null
+            },
+            {
+              "name": "music_throne_anticipation.mp3",
+              "path": "assets/audio/music/chapters/ch3_inner_sanctum/music_throne_anticipation.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch3_inner_sanctum/music_throne_anticipation.mp3",
+              "reviewType": "audio",
+              "size": 5883996,
+              "modified": "2026-02-01T07:53:05.653300",
+              "hash": "4cce60f1",
+              "dimensions": null
+            },
+            {
+              "name": "music_archive_depths.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_archive_depths.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_archive_depths.mp3",
+              "reviewType": "audio",
+              "size": 5155795,
+              "modified": "2026-02-01T07:53:05.665391",
+              "hash": "0a320c2e",
+              "dimensions": null
+            },
+            {
+              "name": "music_archive_exploration.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_archive_exploration.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_archive_exploration.mp3",
+              "reviewType": "audio",
+              "size": 4536684,
+              "modified": "2026-02-01T07:53:05.678046",
+              "hash": "c8453a0b",
+              "dimensions": null
+            },
+            {
+              "name": "music_archive_intro.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_archive_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_archive_intro.mp3",
+              "reviewType": "audio",
+              "size": 2627864,
+              "modified": "2026-02-01T07:53:05.692860",
+              "hash": "55774050",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_archive_keeper_battle.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_boss_archive_keeper_battle.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_boss_archive_keeper_battle.mp3",
+              "reviewType": "audio",
+              "size": 7581885,
+              "modified": "2026-02-01T07:53:05.713889",
+              "hash": "3c333b8a",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_archive_keeper_epic.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_boss_archive_keeper_epic.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_boss_archive_keeper_epic.mp3",
+              "reviewType": "audio",
+              "size": 6211988,
+              "modified": "2026-02-01T07:53:05.727442",
+              "hash": "f97cd123",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_archive_keeper_intro.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_boss_archive_keeper_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_boss_archive_keeper_intro.mp3",
+              "reviewType": "audio",
+              "size": 6745137,
+              "modified": "2026-02-01T07:53:05.741162",
+              "hash": "1a833082",
+              "dimensions": null
+            },
+            {
+              "name": "music_chapter_4_complete.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_chapter_4_complete.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_chapter_4_complete.mp3",
+              "reviewType": "audio",
+              "size": 4206958,
+              "modified": "2026-02-01T07:53:05.748641",
+              "hash": "865de5ac",
+              "dimensions": null
+            },
+            {
+              "name": "music_deep_archive.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_deep_archive.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_deep_archive.mp3",
+              "reviewType": "audio",
+              "size": 5614183,
+              "modified": "2026-02-01T07:53:05.761790",
+              "hash": "569e75e2",
+              "dimensions": null
+            },
+            {
+              "name": "music_forbidden_knowledge.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_forbidden_knowledge.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_forbidden_knowledge.mp3",
+              "reviewType": "audio",
+              "size": 5003088,
+              "modified": "2026-02-01T07:53:05.770568",
+              "hash": "3c1c403c",
+              "dimensions": null
+            },
+            {
+              "name": "music_hash_cathedral.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_hash_cathedral.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_hash_cathedral.mp3",
+              "reviewType": "audio",
+              "size": 5540417,
+              "modified": "2026-02-01T07:53:05.783672",
+              "hash": "335eb2b1",
+              "dimensions": null
+            },
+            {
+              "name": "music_keeper_defeated.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_keeper_defeated.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_keeper_defeated.mp3",
+              "reviewType": "audio",
+              "size": 3869218,
+              "modified": "2026-02-01T07:53:05.788810",
+              "hash": "baec985c",
+              "dimensions": null
+            },
+            {
+              "name": "music_knowledge_unlocked.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_knowledge_unlocked.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_knowledge_unlocked.mp3",
+              "reviewType": "audio",
+              "size": 5484770,
+              "modified": "2026-02-01T07:53:05.800308",
+              "hash": "00330ba3",
+              "dimensions": null
+            },
+            {
+              "name": "music_scarab_revelation.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_scarab_revelation.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_scarab_revelation.mp3",
+              "reviewType": "audio",
+              "size": 3559308,
+              "modified": "2026-02-01T07:53:05.806819",
+              "hash": "493b8dd5",
+              "dimensions": null
+            },
+            {
+              "name": "music_scarab_stirs.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_scarab_stirs.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_scarab_stirs.mp3",
+              "reviewType": "audio",
+              "size": 3482200,
+              "modified": "2026-02-01T07:53:05.814353",
+              "hash": "f97eefad",
+              "dimensions": null
+            },
+            {
+              "name": "music_soul_catalog.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_soul_catalog.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_soul_catalog.mp3",
+              "reviewType": "audio",
+              "size": 3734891,
+              "modified": "2026-02-01T07:53:05.823349",
+              "hash": "ef3aecca",
+              "dimensions": null
+            },
+            {
+              "name": "music_soul_whispers.mp3",
+              "path": "assets/audio/music/chapters/ch4_archive/music_soul_whispers.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch4_archive/music_soul_whispers.mp3",
+              "reviewType": "audio",
+              "size": 3148871,
+              "modified": "2026-02-01T07:53:05.830319",
+              "hash": "0cab0b88",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_forge_master_battle.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_boss_forge_master_battle.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_boss_forge_master_battle.mp3",
+              "reviewType": "audio",
+              "size": 3005118,
+              "modified": "2026-02-01T07:53:05.836765",
+              "hash": "f4ac076d",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_forge_master_epic.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_boss_forge_master_epic.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_boss_forge_master_epic.mp3",
+              "reviewType": "audio",
+              "size": 4730957,
+              "modified": "2026-02-01T07:53:05.847935",
+              "hash": "83d73e6b",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_forge_master_intro.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_boss_forge_master_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_boss_forge_master_intro.mp3",
+              "reviewType": "audio",
+              "size": 5096804,
+              "modified": "2026-02-01T07:53:05.858886",
+              "hash": "0a021a46",
+              "dimensions": null
+            },
+            {
+              "name": "music_chapter_5_complete.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_chapter_5_complete.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_chapter_5_complete.mp3",
+              "reviewType": "audio",
+              "size": 3544071,
+              "modified": "2026-02-01T07:53:05.868567",
+              "hash": "e0ae7efe",
+              "dimensions": null
+            },
+            {
+              "name": "music_creation_fires.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_creation_fires.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_creation_fires.mp3",
+              "reviewType": "audio",
+              "size": 3629304,
+              "modified": "2026-02-01T07:53:05.877533",
+              "hash": "07e0887e",
+              "dimensions": null
+            },
+            {
+              "name": "music_entropy_smith.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_entropy_smith.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_entropy_smith.mp3",
+              "reviewType": "audio",
+              "size": 3376223,
+              "modified": "2026-02-01T07:53:05.882377",
+              "hash": "fa504940",
+              "dimensions": null
+            },
+            {
+              "name": "music_eternal_flames.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_eternal_flames.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_eternal_flames.mp3",
+              "reviewType": "audio",
+              "size": 4794118,
+              "modified": "2026-02-01T07:53:05.892972",
+              "hash": "cfe70dbb",
+              "dimensions": null
+            },
+            {
+              "name": "music_forge_combat.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_forge_combat.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_forge_combat.mp3",
+              "reviewType": "audio",
+              "size": 3309532,
+              "modified": "2026-02-01T07:53:05.900915",
+              "hash": "23330936",
+              "dimensions": null
+            },
+            {
+              "name": "music_forge_heart.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_forge_heart.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_forge_heart.mp3",
+              "reviewType": "audio",
+              "size": 3995820,
+              "modified": "2026-02-01T07:53:05.909785",
+              "hash": "9e7fd4e8",
+              "dimensions": null
+            },
+            {
+              "name": "music_forge_intro.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_forge_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_forge_intro.mp3",
+              "reviewType": "audio",
+              "size": 5056224,
+              "modified": "2026-02-01T07:53:05.917771",
+              "hash": "0bb74d74",
+              "dimensions": null
+            },
+            {
+              "name": "music_forge_triumph.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_forge_triumph.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_forge_triumph.mp3",
+              "reviewType": "audio",
+              "size": 4224444,
+              "modified": "2026-02-01T07:53:05.923638",
+              "hash": "00bfbeea",
+              "dimensions": null
+            },
+            {
+              "name": "music_key_forged.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_key_forged.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_key_forged.mp3",
+              "reviewType": "audio",
+              "size": 3726165,
+              "modified": "2026-02-01T07:53:05.932018",
+              "hash": "4d9def3c",
+              "dimensions": null
+            },
+            {
+              "name": "music_key_fragments.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_key_fragments.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_key_fragments.mp3",
+              "reviewType": "audio",
+              "size": 3435437,
+              "modified": "2026-02-01T07:53:05.937402",
+              "hash": "5f43cf58",
+              "dimensions": null
+            },
+            {
+              "name": "music_smith_freed.mp3",
+              "path": "assets/audio/music/chapters/ch5_forge/music_smith_freed.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch5_forge/music_smith_freed.mp3",
+              "reviewType": "audio",
+              "size": 3400899,
+              "modified": "2026-02-01T07:53:05.943463",
+              "hash": "a8e26d45",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_citadel_lord_battle.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_boss_citadel_lord_battle.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_boss_citadel_lord_battle.mp3",
+              "reviewType": "audio",
+              "size": 5756527,
+              "modified": "2026-02-01T07:53:05.956919",
+              "hash": "caf31c3b",
+              "dimensions": null
+            },
+            {
+              "name": "music_boss_citadel_lord_epic.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_boss_citadel_lord_epic.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_boss_citadel_lord_epic.mp3",
+              "reviewType": "audio",
+              "size": 5816923,
+              "modified": "2026-02-01T07:53:05.970865",
+              "hash": "7257e091",
+              "dimensions": null
+            },
+            {
+              "name": "music_chapter_6_complete.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_chapter_6_complete.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_chapter_6_complete.mp3",
+              "reviewType": "audio",
+              "size": 4051657,
+              "modified": "2026-02-01T07:53:05.979295",
+              "hash": "612b5dd6",
+              "dimensions": null
+            },
+            {
+              "name": "music_circle_remembers.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_circle_remembers.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_circle_remembers.mp3",
+              "reviewType": "audio",
+              "size": 1783015,
+              "modified": "2026-02-01T07:53:05.988403",
+              "hash": "c6bd6d58",
+              "dimensions": null
+            },
+            {
+              "name": "music_citadel_falls.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_citadel_falls.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_citadel_falls.mp3",
+              "reviewType": "audio",
+              "size": 4655862,
+              "modified": "2026-02-01T07:53:05.997690",
+              "hash": "4f998440",
+              "dimensions": null
+            },
+            {
+              "name": "music_citadel_lord_awaits.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_citadel_lord_awaits.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_citadel_lord_awaits.mp3",
+              "reviewType": "audio",
+              "size": 5975820,
+              "modified": "2026-02-01T07:53:06.024036",
+              "hash": "38eb468b",
+              "dimensions": null
+            },
+            {
+              "name": "music_final_confrontation.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_final_confrontation.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_final_confrontation.mp3",
+              "reviewType": "audio",
+              "size": 5035660,
+              "modified": "2026-02-01T07:53:06.033509",
+              "hash": "682d6e7b",
+              "dimensions": null
+            },
+            {
+              "name": "music_infiltrator_triumph.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_infiltrator_triumph.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_infiltrator_triumph.mp3",
+              "reviewType": "audio",
+              "size": 4465020,
+              "modified": "2026-02-01T07:53:06.038800",
+              "hash": "d579eac5",
+              "dimensions": null
+            },
+            {
+              "name": "music_skeleton_key.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_skeleton_key.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_skeleton_key.mp3",
+              "reviewType": "audio",
+              "size": 5495544,
+              "modified": "2026-02-01T07:53:06.050908",
+              "hash": "bfd4e03b",
+              "dimensions": null
+            },
+            {
+              "name": "music_throne_intro.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_throne_intro.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_throne_intro.mp3",
+              "reviewType": "audio",
+              "size": 4518564,
+              "modified": "2026-02-01T07:53:06.061215",
+              "hash": "81b6b7bc",
+              "dimensions": null
+            },
+            {
+              "name": "music_victory_dawn.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_victory_dawn.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_victory_dawn.mp3",
+              "reviewType": "audio",
+              "size": 3866268,
+              "modified": "2026-02-01T07:53:06.069312",
+              "hash": "92fea9b8",
+              "dimensions": null
+            },
+            {
+              "name": "music_victory_key_shatter.mp3",
+              "path": "assets/audio/music/chapters/ch6_throne/music_victory_key_shatter.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch6_throne/music_victory_key_shatter.mp3",
+              "reviewType": "audio",
+              "size": 3160987,
+              "modified": "2026-02-01T07:53:06.075393",
+              "hash": "13b4b088",
+              "dimensions": null
+            },
+            {
+              "name": "ch_archive_souls.mp3",
+              "path": "assets/audio/music/chapters/ch_archive_souls.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch_archive_souls.mp3",
+              "reviewType": "audio",
+              "size": 5540417,
+              "modified": "2026-02-01T07:53:06.086847",
+              "hash": "335eb2b1",
+              "dimensions": null
+            },
+            {
+              "name": "ch_awakening.mp3",
+              "path": "assets/audio/music/chapters/ch_awakening.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch_awakening.mp3",
+              "reviewType": "audio",
+              "size": 3735653,
+              "modified": "2026-02-01T07:53:06.095148",
+              "hash": "df7b0010",
+              "dimensions": null
+            },
+            {
+              "name": "ch_crypts.mp3",
+              "path": "assets/audio/music/chapters/ch_crypts.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch_crypts.mp3",
+              "reviewType": "audio",
+              "size": 3063837,
+              "modified": "2026-02-01T07:53:06.102316",
+              "hash": "3f978ae4",
+              "dimensions": null
+            },
+            {
+              "name": "ch_forge_eternal.mp3",
+              "path": "assets/audio/music/chapters/ch_forge_eternal.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch_forge_eternal.mp3",
+              "reviewType": "audio",
+              "size": 4730957,
+              "modified": "2026-02-01T07:53:06.111756",
+              "hash": "83d73e6b",
+              "dimensions": null
+            },
+            {
+              "name": "ch_inner_sanctum.mp3",
+              "path": "assets/audio/music/chapters/ch_inner_sanctum.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch_inner_sanctum.mp3",
+              "reviewType": "audio",
+              "size": 5883996,
+              "modified": "2026-02-01T07:53:06.123835",
+              "hash": "4cce60f1",
+              "dimensions": null
+            },
+            {
+              "name": "ch_outer_gates.mp3",
+              "path": "assets/audio/music/chapters/ch_outer_gates.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch_outer_gates.mp3",
+              "reviewType": "audio",
+              "size": 4446820,
+              "modified": "2026-02-01T07:53:06.133394",
+              "hash": "c230dda6",
+              "dimensions": null
+            },
+            {
+              "name": "ch_throne_secrets.mp3",
+              "path": "assets/audio/music/chapters/ch_throne_secrets.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/ch_throne_secrets.mp3",
+              "reviewType": "audio",
+              "size": 4465020,
+              "modified": "2026-02-01T07:53:06.138736",
+              "hash": "d579eac5",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_2_trans_1.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_2_trans_1.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_2_trans_1.mp3",
+              "reviewType": "audio",
+              "size": 93492,
+              "modified": "2026-02-01T07:53:06.139241",
+              "hash": "b0299321",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_2_trans_2.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_2_trans_2.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_2_trans_2.mp3",
+              "reviewType": "audio",
+              "size": 79716,
+              "modified": "2026-02-01T07:53:06.139550",
+              "hash": "b3f4a54e",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_3_trans_1.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_3_trans_1.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_3_trans_1.mp3",
+              "reviewType": "audio",
+              "size": 440039,
+              "modified": "2026-02-01T07:53:06.140353",
+              "hash": "3c2d7ead",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_3_trans_2.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_3_trans_2.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_3_trans_2.mp3",
+              "reviewType": "audio",
+              "size": 311201,
+              "modified": "2026-02-01T07:53:06.140905",
+              "hash": "f75d346a",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_3_trans_3.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_3_trans_3.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_3_trans_3.mp3",
+              "reviewType": "audio",
+              "size": 304987,
+              "modified": "2026-02-01T07:53:06.141364",
+              "hash": "fb25d3e7",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_3_trans_4.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_3_trans_4.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_3_trans_4.mp3",
+              "reviewType": "audio",
+              "size": 197243,
+              "modified": "2026-02-01T07:53:06.141768",
+              "hash": "28c5a7fe",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_5_trans_1.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_5_trans_1.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_5_trans_1.mp3",
+              "reviewType": "audio",
+              "size": 89292,
+              "modified": "2026-02-01T07:53:06.142048",
+              "hash": "850e377e",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_5_trans_2.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_5_trans_2.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_5_trans_2.mp3",
+              "reviewType": "audio",
+              "size": 146700,
+              "modified": "2026-02-01T07:53:06.142467",
+              "hash": "485cb5e7",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_6_trans_1.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_6_trans_1.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_6_trans_1.mp3",
+              "reviewType": "audio",
+              "size": 1062922,
+              "modified": "2026-02-01T07:53:06.144888",
+              "hash": "22ed57c7",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_6_trans_2.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_6_trans_2.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_6_trans_2.mp3",
+              "reviewType": "audio",
+              "size": 269719,
+              "modified": "2026-02-01T07:53:06.145566",
+              "hash": "e4dbdc5e",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_6_trans_3.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_6_trans_3.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_6_trans_3.mp3",
+              "reviewType": "audio",
+              "size": 462013,
+              "modified": "2026-02-01T07:53:06.146691",
+              "hash": "ab68cf9d",
+              "dimensions": null
+            },
+            {
+              "name": "stinger_chapter_6_trans_4.mp3",
+              "path": "assets/audio/music/chapters/stingers/stinger_chapter_6_trans_4.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/chapters/stingers/stinger_chapter_6_trans_4.mp3",
+              "reviewType": "audio",
+              "size": 418978,
+              "modified": "2026-02-01T07:53:06.147554",
+              "hash": "e30604b6",
+              "dimensions": null
+            },
+            {
+              "name": "credits_theme.mp3",
+              "path": "assets/audio/music/credits_theme.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/credits_theme.mp3",
+              "reviewType": "audio",
+              "size": 4687279,
+              "modified": "2026-02-01T07:53:06.154742",
+              "hash": "257b903e",
+              "dimensions": null
+            },
+            {
+              "name": "dungeon_ambiance.mp3",
+              "path": "assets/audio/music/dungeon_ambiance.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/dungeon_ambiance.mp3",
+              "reviewType": "audio",
+              "size": 1808951,
+              "modified": "2026-02-01T07:53:06.158851",
+              "hash": "0423a31d",
+              "dimensions": null
+            },
+            {
+              "name": "title_theme.mp3",
+              "path": "assets/audio/music/title_theme.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/title_theme.mp3",
+              "reviewType": "audio",
+              "size": 3805171,
+              "modified": "2026-02-01T07:53:06.164850",
+              "hash": "37093c61",
+              "dimensions": null
+            },
+            {
+              "name": "title_theme.wav",
+              "path": "assets/audio/music/title_theme.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/title_theme.wav",
+              "reviewType": "audio",
+              "size": 3840078,
+              "modified": "2026-01-25T21:07:13",
+              "hash": "9785f7be",
+              "dimensions": null
+            },
+            {
+              "name": "victory_theme.mp3",
+              "path": "assets/audio/music/victory_theme.mp3",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/music/victory_theme.mp3",
+              "reviewType": "audio",
+              "size": 4051657,
+              "modified": "2026-02-01T07:53:06.172267",
+              "hash": "612b5dd6",
+              "dimensions": null
+            }
+          ],
+          "count": 125
+        },
+        "sfx": {
+          "path": "assets/audio/sfx",
+          "reviewType": "audio",
+          "assets": [
+            {
+              "name": "boss_appear.wav",
+              "path": "assets/audio/sfx/encounters/boss_appear.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/sfx/encounters/boss_appear.wav",
+              "reviewType": "audio",
+              "size": 512078,
+              "modified": "2026-01-25T21:04:28",
+              "hash": "e7708a80",
+              "dimensions": null
+            },
+            {
+              "name": "defeat_sting.wav",
+              "path": "assets/audio/sfx/encounters/defeat_sting.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/sfx/encounters/defeat_sting.wav",
+              "reviewType": "audio",
+              "size": 512078,
+              "modified": "2026-01-25T21:04:53",
+              "hash": "370e77c1",
+              "dimensions": null
+            },
+            {
+              "name": "victory_fanfare.wav",
+              "path": "assets/audio/sfx/encounters/victory_fanfare.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/sfx/encounters/victory_fanfare.wav",
+              "reviewType": "audio",
+              "size": 640078,
+              "modified": "2026-01-25T21:04:42",
+              "hash": "967b9f4a",
+              "dimensions": null
+            },
+            {
+              "name": "crack_failure.wav",
+              "path": "assets/audio/sfx/gameplay/crack_failure.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/sfx/gameplay/crack_failure.wav",
+              "reviewType": "audio",
+              "size": 256078,
+              "modified": "2026-01-25T21:01:50",
+              "hash": "2af87406",
+              "dimensions": null
+            },
+            {
+              "name": "crack_success.wav",
+              "path": "assets/audio/sfx/gameplay/crack_success.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/sfx/gameplay/crack_success.wav",
+              "reviewType": "audio",
+              "size": 384078,
+              "modified": "2026-01-25T21:01:44",
+              "hash": "ac90876c",
+              "dimensions": null
+            },
+            {
+              "name": "hint_reveal.wav",
+              "path": "assets/audio/sfx/gameplay/hint_reveal.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/sfx/gameplay/hint_reveal.wav",
+              "reviewType": "audio",
+              "size": 384078,
+              "modified": "2026-01-25T21:01:59",
+              "hash": "9181ddb6",
+              "dimensions": null
+            },
+            {
+              "name": "typing_key.wav",
+              "path": "assets/audio/sfx/gameplay/typing_key.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/sfx/gameplay/typing_key.wav",
+              "reviewType": "audio",
+              "size": 128078,
+              "modified": "2026-01-25T21:02:09",
+              "hash": "0ed96443",
+              "dimensions": null
+            },
+            {
+              "name": "xp_gain.wav",
+              "path": "assets/audio/sfx/gameplay/xp_gain.wav",
+              "absolutePath": "/Users/petermckernan/Projects/SpellEngine/assets/audio/sfx/gameplay/xp_gain.wav",
+              "reviewType": "audio",
+              "size": 256078,
+              "modified": "2026-01-25T21:02:06",
+              "hash": "1e526f1a",
+              "dimensions": null
+            }
+          ],
+          "count": 8
+        }
+      },
+      "totalAssets": 133
+    },
+    "hashchampions": {
+      "name": "HashChampions",
+      "basePath": "/Users/petermckernan/Projects/HashChampions",
+      "categories": {
+        "hero": {
+          "path": "public/images/hero",
+          "reviewType": "art",
+          "assets": [
+            {
+              "name": "hero_castle_dawn.png",
+              "path": "public/images/hero/hero_castle_dawn.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/hero/hero_castle_dawn.png",
+              "reviewType": "art",
+              "size": 2679106,
+              "modified": "2026-01-31T11:49:08.575145",
+              "hash": "88299603",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "hero_castle_night.png",
+              "path": "public/images/hero/hero_castle_night.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/hero/hero_castle_night.png",
+              "reviewType": "art",
+              "size": 2904756,
+              "modified": "2026-01-31T11:49:08.571282",
+              "hash": "b46e1a7a",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "hero_castle_sunset.png",
+              "path": "public/images/hero/hero_castle_sunset.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/hero/hero_castle_sunset.png",
+              "reviewType": "art",
+              "size": 2900661,
+              "modified": "2026-01-31T11:49:08.567667",
+              "hash": "4513a3e0",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "hero_challenge_forge.png",
+              "path": "public/images/hero/hero_challenge_forge.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/hero/hero_challenge_forge.png",
+              "reviewType": "art",
+              "size": 2662154,
+              "modified": "2026-01-31T22:35:35.332378",
+              "hash": "97b4af38",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "hero_champions_arena.png",
+              "path": "public/images/hero/hero_champions_arena.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/hero/hero_champions_arena.png",
+              "reviewType": "art",
+              "size": 2799418,
+              "modified": "2026-01-31T22:14:54.522147",
+              "hash": "8eecd4c4",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "hero_leaderboard_hall.png",
+              "path": "public/images/hero/hero_leaderboard_hall.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/hero/hero_leaderboard_hall.png",
+              "reviewType": "art",
+              "size": 2814951,
+              "modified": "2026-01-31T22:15:31.006250",
+              "hash": "18833915",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "hero_profile_sanctum.png",
+              "path": "public/images/hero/hero_profile_sanctum.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/hero/hero_profile_sanctum.png",
+              "reviewType": "art",
+              "size": 2359391,
+              "modified": "2026-01-31T22:16:11.218650",
+              "hash": "5d5f43e9",
+              "dimensions": "1792x1024"
+            }
+          ],
+          "count": 7
+        },
+        "leaderboard": {
+          "path": "public/images/leaderboard",
+          "reviewType": "art",
+          "assets": [
+            {
+              "name": "leaderboard_crown_bronze.png",
+              "path": "public/images/leaderboard/leaderboard_crown_bronze.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_crown_bronze.png",
+              "reviewType": "art",
+              "size": 1452482,
+              "modified": "2026-01-31T22:20:42.814657",
+              "hash": "867cbb03",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "leaderboard_crown_gold.png",
+              "path": "public/images/leaderboard/leaderboard_crown_gold.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_crown_gold.png",
+              "reviewType": "art",
+              "size": 1514372,
+              "modified": "2026-01-31T22:19:45.045234",
+              "hash": "7c92fc5d",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "leaderboard_crown_silver.png",
+              "path": "public/images/leaderboard/leaderboard_crown_silver.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_crown_silver.png",
+              "reviewType": "art",
+              "size": 1347393,
+              "modified": "2026-01-31T22:20:13.156110",
+              "hash": "d3a68dc7",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "leaderboard_header_banner.png",
+              "path": "public/images/leaderboard/leaderboard_header_banner.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_header_banner.png",
+              "reviewType": "art",
+              "size": 2529604,
+              "modified": "2026-01-31T22:17:15.399460",
+              "hash": "89a9cb07",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "leaderboard_podium_bronze.png",
+              "path": "public/images/leaderboard/leaderboard_podium_bronze.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_podium_bronze.png",
+              "reviewType": "art",
+              "size": 1413121,
+              "modified": "2026-01-31T22:18:41.036570",
+              "hash": "106ee331",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "leaderboard_podium_gold.png",
+              "path": "public/images/leaderboard/leaderboard_podium_gold.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_podium_gold.png",
+              "reviewType": "art",
+              "size": 1630025,
+              "modified": "2026-01-31T22:17:43.827685",
+              "hash": "5ad0234c",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "leaderboard_podium_silver.png",
+              "path": "public/images/leaderboard/leaderboard_podium_silver.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_podium_silver.png",
+              "reviewType": "art",
+              "size": 1452290,
+              "modified": "2026-01-31T22:18:11.938148",
+              "hash": "02077c97",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "leaderboard_rank_badge.png",
+              "path": "public/images/leaderboard/leaderboard_rank_badge.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_rank_badge.png",
+              "reviewType": "art",
+              "size": 1211993,
+              "modified": "2026-01-31T22:21:10.494761",
+              "hash": "0bc93865",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "leaderboard_row_frame.png",
+              "path": "public/images/leaderboard/leaderboard_row_frame.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/leaderboard/leaderboard_row_frame.png",
+              "reviewType": "art",
+              "size": 2080930,
+              "modified": "2026-01-31T22:19:17.101930",
+              "hash": "3f9e42de",
+              "dimensions": "1792x1024"
+            }
+          ],
+          "count": 9
+        },
+        "ranks": {
+          "path": "public/images/icons/ranks",
+          "reviewType": "art",
+          "assets": [
+            {
+              "name": "rank_adept.png",
+              "path": "public/images/icons/ranks/rank_adept.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/ranks/rank_adept.png",
+              "reviewType": "art",
+              "size": 1379929,
+              "modified": "2026-01-31T22:23:10.163935",
+              "hash": "95033eee",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "rank_apprentice.png",
+              "path": "public/images/icons/ranks/rank_apprentice.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/ranks/rank_apprentice.png",
+              "reviewType": "art",
+              "size": 1284027,
+              "modified": "2026-01-31T22:22:05.799349",
+              "hash": "dfb7d172",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "rank_grandmaster.png",
+              "path": "public/images/icons/ranks/rank_grandmaster.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/ranks/rank_grandmaster.png",
+              "reviewType": "art",
+              "size": 2017040,
+              "modified": "2026-01-31T22:24:03.298263",
+              "hash": "f9e38a94",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "rank_initiate.png",
+              "path": "public/images/icons/ranks/rank_initiate.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/ranks/rank_initiate.png",
+              "reviewType": "art",
+              "size": 1253427,
+              "modified": "2026-01-31T22:21:40.572577",
+              "hash": "5d9aa92d",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "rank_journeyman.png",
+              "path": "public/images/icons/ranks/rank_journeyman.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/ranks/rank_journeyman.png",
+              "reviewType": "art",
+              "size": 1104051,
+              "modified": "2026-01-31T22:22:44.353511",
+              "hash": "cf24f310",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "rank_legend.png",
+              "path": "public/images/icons/ranks/rank_legend.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/ranks/rank_legend.png",
+              "reviewType": "art",
+              "size": 1328427,
+              "modified": "2026-01-31T22:24:32.025037",
+              "hash": "b6a5f177",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "rank_master.png",
+              "path": "public/images/icons/ranks/rank_master.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/ranks/rank_master.png",
+              "reviewType": "art",
+              "size": 1703554,
+              "modified": "2026-01-31T22:23:39.138915",
+              "hash": "2e0551b5",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "rank_mythic.png",
+              "path": "public/images/icons/ranks/rank_mythic.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/ranks/rank_mythic.png",
+              "reviewType": "art",
+              "size": 1439348,
+              "modified": "2026-01-31T22:24:59.803167",
+              "hash": "253a9663",
+              "dimensions": "1024x1024"
+            }
+          ],
+          "count": 8
+        },
+        "achievements": {
+          "path": "public/images/icons/achievements",
+          "reviewType": "art",
+          "assets": [
+            {
+              "name": "achieve_all_algorithms.png",
+              "path": "public/images/icons/achievements/achieve_all_algorithms.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_all_algorithms.png",
+              "reviewType": "art",
+              "size": 1423455,
+              "modified": "2026-01-31T22:30:44.974355",
+              "hash": "4c08d9ce",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_brute_force_awakening.png",
+              "path": "public/images/icons/achievements/achieve_brute_force_awakening.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_brute_force_awakening.png",
+              "reviewType": "art",
+              "size": 1147263,
+              "modified": "2026-01-31T11:49:08.594409",
+              "hash": "d34dbb18",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_cipher_master.png",
+              "path": "public/images/icons/achievements/achieve_cipher_master.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_cipher_master.png",
+              "reviewType": "art",
+              "size": 1375323,
+              "modified": "2026-01-31T11:49:08.582351",
+              "hash": "ce04db61",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_circle_initiate.png",
+              "path": "public/images/icons/achievements/achieve_circle_initiate.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_circle_initiate.png",
+              "reviewType": "art",
+              "size": 1406640,
+              "modified": "2026-01-31T11:49:08.590453",
+              "hash": "d3f2cc35",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_comeback.png",
+              "path": "public/images/icons/achievements/achieve_comeback.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_comeback.png",
+              "reviewType": "art",
+              "size": 1259138,
+              "modified": "2026-01-31T22:33:03.994902",
+              "hash": "3b6e65ac",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_first_blood.png",
+              "path": "public/images/icons/achievements/achieve_first_blood.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_first_blood.png",
+              "reviewType": "art",
+              "size": 1049203,
+              "modified": "2026-01-31T22:32:33.026654",
+              "hash": "87bf3868",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_first_crack.png",
+              "path": "public/images/icons/achievements/achieve_first_crack.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_first_crack.png",
+              "reviewType": "art",
+              "size": 1041785,
+              "modified": "2026-01-31T11:49:08.595300",
+              "hash": "4653f8bb",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_hash_brown.png",
+              "path": "public/images/icons/achievements/achieve_hash_brown.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_hash_brown.png",
+              "reviewType": "art",
+              "size": 1342362,
+              "modified": "2026-01-31T11:49:08.597126",
+              "hash": "ff9e78ee",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_monthly_legend.png",
+              "path": "public/images/icons/achievements/achieve_monthly_legend.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_monthly_legend.png",
+              "reviewType": "art",
+              "size": 1304693,
+              "modified": "2026-01-31T22:30:13.245264",
+              "hash": "90fe21c0",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_nightmare_survivor.png",
+              "path": "public/images/icons/achievements/achieve_nightmare_survivor.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_nightmare_survivor.png",
+              "reviewType": "art",
+              "size": 891778,
+              "modified": "2026-01-31T11:49:08.593582",
+              "hash": "69af11ad",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_pattern_recognition.png",
+              "path": "public/images/icons/achievements/achieve_pattern_recognition.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_pattern_recognition.png",
+              "reviewType": "art",
+              "size": 1121370,
+              "modified": "2026-01-31T11:49:08.577670",
+              "hash": "99540166",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_perfect_run.png",
+              "path": "public/images/icons/achievements/achieve_perfect_run.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_perfect_run.png",
+              "reviewType": "art",
+              "size": 1110881,
+              "modified": "2026-01-31T22:31:13.158262",
+              "hash": "ec1d821f",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_rainbow_warrior.png",
+              "path": "public/images/icons/achievements/achieve_rainbow_warrior.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_rainbow_warrior.png",
+              "reviewType": "art",
+              "size": 1080935,
+              "modified": "2026-01-31T11:49:08.583202",
+              "hash": "143590f6",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_salt_of_earth.png",
+              "path": "public/images/icons/achievements/achieve_salt_of_earth.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_salt_of_earth.png",
+              "reviewType": "art",
+              "size": 1170697,
+              "modified": "2026-01-31T11:49:08.585998",
+              "hash": "409f68b5",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_skeleton_key.png",
+              "path": "public/images/icons/achievements/achieve_skeleton_key.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_skeleton_key.png",
+              "reviewType": "art",
+              "size": 1200205,
+              "modified": "2026-01-31T11:49:08.587035",
+              "hash": "569c7438",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_speed_demon.png",
+              "path": "public/images/icons/achievements/achieve_speed_demon.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_speed_demon.png",
+              "reviewType": "art",
+              "size": 1172506,
+              "modified": "2026-01-31T11:49:08.589190",
+              "hash": "f47a0bf1",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_speed_run.png",
+              "path": "public/images/icons/achievements/achieve_speed_run.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_speed_run.png",
+              "reviewType": "art",
+              "size": 1205438,
+              "modified": "2026-01-31T22:31:39.511963",
+              "hash": "d76a1afd",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_team_player.png",
+              "path": "public/images/icons/achievements/achieve_team_player.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_team_player.png",
+              "reviewType": "art",
+              "size": 1148938,
+              "modified": "2026-01-31T22:32:06.180230",
+              "hash": "659d64b4",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_weekly_champion.png",
+              "path": "public/images/icons/achievements/achieve_weekly_champion.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_weekly_champion.png",
+              "reviewType": "art",
+              "size": 1616354,
+              "modified": "2026-01-31T22:29:39.032124",
+              "hash": "9d6e1737",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "achieve_wordsmith.png",
+              "path": "public/images/icons/achievements/achieve_wordsmith.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/icons/achievements/achieve_wordsmith.png",
+              "reviewType": "art",
+              "size": 1603511,
+              "modified": "2026-01-31T11:49:08.580059",
+              "hash": "2a2b461b",
+              "dimensions": "1024x1024"
+            }
+          ],
+          "count": 20
+        },
+        "profile": {
+          "path": "public/images/profile",
+          "reviewType": "art",
+          "assets": [
+            {
+              "name": "character_sheet_frame.png",
+              "path": "public/images/profile/character_sheet_frame.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/character_sheet_frame.png",
+              "reviewType": "art",
+              "size": 2483236,
+              "modified": "2026-01-31T11:49:08.650152",
+              "hash": "7cb38396",
+              "dimensions": "1024x1792"
+            },
+            {
+              "name": "portrait_frame_bronze.png",
+              "path": "public/images/profile/portrait_frame_bronze.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/portrait_frame_bronze.png",
+              "reviewType": "art",
+              "size": 1227372,
+              "modified": "2026-01-31T11:49:08.646075",
+              "hash": "e4cfcb90",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "portrait_frame_gold.png",
+              "path": "public/images/profile/portrait_frame_gold.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/portrait_frame_gold.png",
+              "reviewType": "art",
+              "size": 1361369,
+              "modified": "2026-01-31T11:49:08.648915",
+              "hash": "97650584",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "portrait_frame_legendary.png",
+              "path": "public/images/profile/portrait_frame_legendary.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/portrait_frame_legendary.png",
+              "reviewType": "art",
+              "size": 1550645,
+              "modified": "2026-01-31T11:49:08.654479",
+              "hash": "0fbc148c",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "portrait_frame_silver.png",
+              "path": "public/images/profile/portrait_frame_silver.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/portrait_frame_silver.png",
+              "reviewType": "art",
+              "size": 1488467,
+              "modified": "2026-01-31T11:49:08.653386",
+              "hash": "d25809e2",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "profile_card_bg_arcane.png",
+              "path": "public/images/profile/profile_card_bg_arcane.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/profile_card_bg_arcane.png",
+              "reviewType": "art",
+              "size": 1671026,
+              "modified": "2026-01-31T22:26:42.511707",
+              "hash": "4dcef17c",
+              "dimensions": "1024x1792"
+            },
+            {
+              "name": "profile_card_bg_champion.png",
+              "path": "public/images/profile/profile_card_bg_champion.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/profile_card_bg_champion.png",
+              "reviewType": "art",
+              "size": 2194195,
+              "modified": "2026-01-31T22:27:16.014664",
+              "hash": "1df5ad42",
+              "dimensions": "1024x1792"
+            },
+            {
+              "name": "profile_card_bg_parchment.png",
+              "path": "public/images/profile/profile_card_bg_parchment.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/profile_card_bg_parchment.png",
+              "reviewType": "art",
+              "size": 3108891,
+              "modified": "2026-01-31T22:26:03.527851",
+              "hash": "45fb9c3a",
+              "dimensions": "1024x1792"
+            },
+            {
+              "name": "profile_card_bg_stone.png",
+              "path": "public/images/profile/profile_card_bg_stone.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/profile_card_bg_stone.png",
+              "reviewType": "art",
+              "size": 2410418,
+              "modified": "2026-01-31T22:25:29.498205",
+              "hash": "dfa10323",
+              "dimensions": "1024x1792"
+            },
+            {
+              "name": "profile_card_overlay_hash.png",
+              "path": "public/images/profile/profile_card_overlay_hash.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/profile_card_overlay_hash.png",
+              "reviewType": "art",
+              "size": 1708395,
+              "modified": "2026-01-31T22:27:53.102437",
+              "hash": "b72b5c02",
+              "dimensions": "1024x1792"
+            },
+            {
+              "name": "profile_stat_bar_streak.png",
+              "path": "public/images/profile/profile_stat_bar_streak.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/profile_stat_bar_streak.png",
+              "reviewType": "art",
+              "size": 1853493,
+              "modified": "2026-01-31T22:29:03.589147",
+              "hash": "88510e00",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "profile_stat_bar_xp.png",
+              "path": "public/images/profile/profile_stat_bar_xp.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/profile_stat_bar_xp.png",
+              "reviewType": "art",
+              "size": 1699415,
+              "modified": "2026-01-31T22:28:28.042744",
+              "hash": "f28ccfbb",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "stat_bar_empty.png",
+              "path": "public/images/profile/stat_bar_empty.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/stat_bar_empty.png",
+              "reviewType": "art",
+              "size": 2073806,
+              "modified": "2026-01-31T11:49:08.644137",
+              "hash": "081ed4ea",
+              "dimensions": "1792x1024"
+            },
+            {
+              "name": "stat_bar_full.png",
+              "path": "public/images/profile/stat_bar_full.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/profile/stat_bar_full.png",
+              "reviewType": "art",
+              "size": 1778432,
+              "modified": "2026-01-31T11:49:08.642821",
+              "hash": "5afb0049",
+              "dimensions": "1792x1024"
+            }
+          ],
+          "count": 14
+        },
+        "characters": {
+          "path": "public/images/characters",
+          "reviewType": "art",
+          "assets": [
+            {
+              "name": "figurine_artificer.png",
+              "path": "public/images/characters/figurines/figurine_artificer.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/figurines/figurine_artificer.png",
+              "reviewType": "art",
+              "size": 935427,
+              "modified": "2026-01-31T11:49:08.553152",
+              "hash": "0c73f0cc",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "figurine_bard.png",
+              "path": "public/images/characters/figurines/figurine_bard.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/figurines/figurine_bard.png",
+              "reviewType": "art",
+              "size": 943006,
+              "modified": "2026-01-31T11:49:08.562902",
+              "hash": "149d8a8b",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "figurine_cleric.png",
+              "path": "public/images/characters/figurines/figurine_cleric.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/figurines/figurine_cleric.png",
+              "reviewType": "art",
+              "size": 1157528,
+              "modified": "2026-01-31T11:49:08.550856",
+              "hash": "bee43cf0",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "figurine_paladin.png",
+              "path": "public/images/characters/figurines/figurine_paladin.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/figurines/figurine_paladin.png",
+              "reviewType": "art",
+              "size": 1214938,
+              "modified": "2026-01-31T11:49:08.563927",
+              "hash": "5b4f3a0a",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "figurine_ranger.png",
+              "path": "public/images/characters/figurines/figurine_ranger.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/figurines/figurine_ranger.png",
+              "reviewType": "art",
+              "size": 922178,
+              "modified": "2026-01-31T11:49:08.561887",
+              "hash": "a61c046c",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "figurine_rogue.png",
+              "path": "public/images/characters/figurines/figurine_rogue.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/figurines/figurine_rogue.png",
+              "reviewType": "art",
+              "size": 1142442,
+              "modified": "2026-01-31T11:49:08.557916",
+              "hash": "67d9cdec",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "figurine_warrior.png",
+              "path": "public/images/characters/figurines/figurine_warrior.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/figurines/figurine_warrior.png",
+              "reviewType": "art",
+              "size": 1105798,
+              "modified": "2026-01-31T11:49:08.547724",
+              "hash": "808a7771",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "figurine_wizard.png",
+              "path": "public/images/characters/figurines/figurine_wizard.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/figurines/figurine_wizard.png",
+              "reviewType": "art",
+              "size": 1073709,
+              "modified": "2026-01-31T11:49:08.556264",
+              "hash": "c67d2556",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "npc_blacksmith.png",
+              "path": "public/images/characters/npcs/npc_blacksmith.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/npcs/npc_blacksmith.png",
+              "reviewType": "art",
+              "size": 1138221,
+              "modified": "2026-01-31T11:49:08.543307",
+              "hash": "b0302807",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "npc_guard_friendly.png",
+              "path": "public/images/characters/npcs/npc_guard_friendly.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/npcs/npc_guard_friendly.png",
+              "reviewType": "art",
+              "size": 968530,
+              "modified": "2026-01-31T11:49:08.541140",
+              "hash": "ceeb30d5",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "npc_librarian.png",
+              "path": "public/images/characters/npcs/npc_librarian.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/npcs/npc_librarian.png",
+              "reviewType": "art",
+              "size": 1248264,
+              "modified": "2026-01-31T11:49:08.540103",
+              "hash": "b0d0d793",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "npc_null_cipher.png",
+              "path": "public/images/characters/npcs/npc_null_cipher.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/npcs/npc_null_cipher.png",
+              "reviewType": "art",
+              "size": 1043732,
+              "modified": "2026-01-31T11:49:08.545211",
+              "hash": "a3e477e5",
+              "dimensions": "1024x1024"
+            },
+            {
+              "name": "npc_shopkeeper.png",
+              "path": "public/images/characters/npcs/npc_shopkeeper.png",
+              "absolutePath": "/Users/petermckernan/Projects/HashChampions/public/images/characters/npcs/npc_shopkeeper.png",
+              "reviewType": "art",
+              "size": 1059844,
+              "modified": "2026-01-31T11:49:08.546593",
+              "hash": "a22f9477",
+              "dimensions": "1024x1024"
+            }
+          ],
+          "count": 13
+        }
+      },
+      "totalAssets": 71
+    }
+  },
+  "totalAssets": 204
+}

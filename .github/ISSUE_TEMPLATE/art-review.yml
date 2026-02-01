@@ -1,0 +1,63 @@
+name: Art Review
+description: Visual asset needs revision or flagging
+title: "[ART] "
+labels: ["art-review", "fraz-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Art Review Submission
+        *Fraz's Queue - Visual Alchemy*
+
+  - type: input
+    id: asset
+    attributes:
+      label: Asset Name
+      description: Filename of the asset
+      placeholder: hero_champions_arena.png
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Asset category
+      placeholder: Hero Banners
+    validations:
+      required: true
+
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict
+      options:
+        - Needs Revision
+        - Flagged for Discussion
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What needs to change?
+      placeholder: |
+        - Colors too dark
+        - Doesn't match style guide
+        - Resolution issues
+    validations:
+      required: true
+
+  - type: input
+    id: build
+    attributes:
+      label: Build Version
+      placeholder: v1.0-alpha
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name or GitHub username

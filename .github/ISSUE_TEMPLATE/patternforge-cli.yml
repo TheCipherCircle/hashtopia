@@ -1,0 +1,91 @@
+name: PatternForge CLI Feedback
+description: Command issues, confusing output, help text, CLI experience
+title: "[CLI] "
+labels: ["cli-feedback", "forge-queue", "patternforge"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## PatternForge CLI Feedback
+        *Forge's Queue - Tool Refinement*
+
+        For command issues, confusing output, and CLI experience.
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Command didn't work
+        - Output confusing
+        - Help text unclear
+        - Missing feature
+        - Error message unhelpful
+        - Performance issue
+        - Installation problem
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: command
+    attributes:
+      label: Command Used
+      description: What did you run?
+      placeholder: "patternforge crack --hash abc123 --type md5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Output Received
+      description: What did it show?
+      render: shell
+      placeholder: |
+        Error: Unknown flag --type
+        Run 'patternforge help' for usage
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: |
+        Should have attempted to crack the hash using MD5 mode
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion
+      description: How could we improve this?
+      placeholder: |
+        The flag should be --algorithm not --type
+        Or accept both for convenience
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: PatternForge Version
+      placeholder: "v2.1.0"
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: "macOS 14.2 / Windows 11 / Linux"
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reporter
+      placeholder: Your name
+    validations:
+      required: true

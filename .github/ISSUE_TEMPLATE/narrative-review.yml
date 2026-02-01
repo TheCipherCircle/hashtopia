@@ -1,0 +1,78 @@
+name: Narrative Review
+description: Story, dialogue, or text needs revision
+title: "[NARRATIVE] "
+labels: ["narrative-review", "mirth-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Narrative Review Submission
+        *Mirth's Queue - Story Weaving*
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where in the game/content?
+      placeholder: Chapter 2, Encounter 3, Dialogue with Grimgut
+    validations:
+      required: true
+
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: Content Type
+      options:
+        - Dialogue
+        - Description/Narration
+        - Item Text
+        - Lore Entry
+        - UI Text
+        - Tutorial
+    validations:
+      required: true
+
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict
+      options:
+        - Needs Revision
+        - Flagged for Discussion
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-text
+    attributes:
+      label: Current Text
+      description: Copy the text that needs revision
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What's wrong? Suggested changes?
+      placeholder: |
+        - Tone doesn't match character
+        - Typo/grammar issue
+        - Breaks immersion
+        - Inconsistent with lore
+    validations:
+      required: true
+
+  - type: input
+    id: build
+    attributes:
+      label: Build Version
+      placeholder: v1.0-alpha
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name or GitHub username

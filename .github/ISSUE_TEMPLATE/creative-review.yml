@@ -1,0 +1,159 @@
+name: Creative Review
+description: Playtest feedback on encounters, narrative, hints, and game moments
+title: "[CREATIVE] "
+labels: ["creative-review", "mirth-queue", "playtest"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Creative Review
+        *Feedback on a game moment during playtest*
+
+        Use this for encounters, boss fights, puzzles, narrative beats - anything you experience while playing.
+
+  - type: input
+    id: encounter
+    attributes:
+      label: Encounter / Scene
+      description: Which moment in the game?
+      placeholder: "Chapter 3 - The Vault Door"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: chapter
+    attributes:
+      label: Chapter
+      options:
+        - Prologue
+        - Chapter 1 - Breach the Gate
+        - Chapter 2 - The Sunken Archives
+        - Chapter 3 - Cryptkeeper's Domain
+        - Chapter 4 - Archive of Souls
+        - Chapter 5 - The Forge Eternal
+        - Chapter 6 - Throne of Secrets
+    validations:
+      required: true
+
+  - type: dropdown
+    id: review-type
+    attributes:
+      label: What needs attention?
+      options:
+        - Narrative text
+        - Hints (too vague/obvious)
+        - Challenge difficulty
+        - Pacing/flow
+        - Art doesn't fit
+        - Audio doesn't fit
+        - Multiple things
+    validations:
+      required: true
+
+  - type: dropdown
+    id: challenge-feel
+    attributes:
+      label: Challenge Feel
+      description: How did the difficulty feel?
+      options:
+        - Too Easy
+        - Just Right
+        - Too Hard
+        - Unfair / Broken
+        - N/A
+    validations:
+      required: false
+
+  - type: dropdown
+    id: pacing
+    attributes:
+      label: Pacing
+      description: How was the flow?
+      options:
+        - Too Slow / Dragged
+        - Good Flow
+        - Too Rushed
+        - Confusing
+        - N/A
+    validations:
+      required: false
+
+  - type: textarea
+    id: current-text
+    attributes:
+      label: Current Text (if narrative issue)
+      description: Copy the text that needs changing
+      placeholder: |
+        "The ancient door hums with forgotten power..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggested-text
+    attributes:
+      label: Suggested Text
+      description: Your proposed replacement
+      placeholder: |
+        "The vault seal pulses with each heartbeat..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: hints
+    attributes:
+      label: Hint Feedback
+      description: If hints need adjustment
+      placeholder: |
+        Easy hint: Current is too obvious, suggest "..."
+        Medium hint: Good as-is
+        Hard hint: Too cryptic, suggest "..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: asset-swaps
+    attributes:
+      label: Asset Swaps
+      description: Suggest different art or audio for this scene
+      placeholder: |
+        Background: Current vault_door.png feels too bright, try something darker
+        Music: tension_loop.ogg works but could use more bass
+    validations:
+      required: false
+
+  - type: textarea
+    id: creative-notes
+    attributes:
+      label: Creative Notes
+      description: Mood, tone, what's not landing, overall impressions
+      placeholder: |
+        The moment doesn't feel tense enough. The text says "danger" but
+        the music is almost cheerful. Consider...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag and drop what you saw in-game
+      placeholder: Paste or drag screenshot here
+    validations:
+      required: false
+
+  - type: input
+    id: build
+    attributes:
+      label: Build Version
+      placeholder: v1.0-alpha
+    validations:
+      required: false
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name
+    validations:
+      required: true

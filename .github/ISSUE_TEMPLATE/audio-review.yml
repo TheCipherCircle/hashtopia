@@ -1,0 +1,73 @@
+name: Audio Review
+description: Audio asset needs revision or flagging
+title: "[AUDIO] "
+labels: ["audio-review", "echo-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Audio Review Submission
+        *Echo's Queue - Resonance Weaving*
+
+  - type: input
+    id: asset
+    attributes:
+      label: Asset Name
+      description: Filename of the audio asset
+      placeholder: chapter1_theme.ogg
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audio-type
+    attributes:
+      label: Audio Type
+      options:
+        - Music
+        - Sound Effect
+        - Ambience
+        - Voice
+    validations:
+      required: true
+
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict
+      options:
+        - Needs Revision
+        - Flagged for Discussion
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What needs to change?
+      placeholder: |
+        - Volume too loud/quiet
+        - Doesn't loop cleanly
+        - Mood doesn't match scene
+        - Quality issues
+    validations:
+      required: true
+
+  - type: input
+    id: timestamp
+    attributes:
+      label: Timestamp (if applicable)
+      placeholder: "1:23 - 1:45"
+
+  - type: input
+    id: build
+    attributes:
+      label: Build Version
+      placeholder: v1.0-alpha
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name or GitHub username

@@ -1,0 +1,95 @@
+name: Lore Consistency
+description: Timeline contradictions, canon conflicts, world-building issues
+title: "[LORE] "
+labels: ["lore-review", "loreth-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Lore Consistency Check
+        *Loreth's Queue - The Archives Remember*
+
+        For contradictions, timeline issues, and canon conflicts.
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Timeline contradiction
+        - Character inconsistency
+        - Location/geography conflict
+        - Named entity mismatch
+        - Retcon needed
+        - Missing context
+        - Breaks established canon
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location-a
+    attributes:
+      label: Source A
+      description: Where is the first reference?
+      placeholder: "Chapter 2 - Archive intro text"
+    validations:
+      required: true
+
+  - type: textarea
+    id: text-a
+    attributes:
+      label: Text A
+      description: What does it say?
+      placeholder: '"The Citadel fell three centuries ago..."'
+    validations:
+      required: true
+
+  - type: input
+    id: location-b
+    attributes:
+      label: Source B (conflicting)
+      description: Where is the contradiction?
+      placeholder: "Chapter 5 - Forge dialogue"
+    validations:
+      required: true
+
+  - type: textarea
+    id: text-b
+    attributes:
+      label: Text B
+      description: What does it say that conflicts?
+      placeholder: '"When the Citadel fell fifty years past..."'
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Why does this matter?
+      placeholder: |
+        This changes the entire timeline. If 50 years, the Cipher Lord
+        could still be alive. If 300 years, different implications.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-resolution
+    attributes:
+      label: Suggested Resolution
+      description: How should we fix it?
+      placeholder: |
+        Change Chapter 5 to "three centuries" to match Ch2.
+        Or establish that time flows differently in the Citadel.
+    validations:
+      required: false
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name
+    validations:
+      required: true

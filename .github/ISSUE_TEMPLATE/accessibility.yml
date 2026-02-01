@@ -1,0 +1,102 @@
+name: Accessibility Review
+description: Contrast, text size, colorblind support, controls, screen reader issues
+title: "[A11Y] "
+labels: ["accessibility", "prism-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Accessibility Review
+        *Prism's Queue - Everyone Should Play*
+
+        For contrast, text size, colorblind support, motor accessibility, and screen reader compatibility.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - SpellEngine / Dread Citadel
+        - HashChampions
+        - PatternForge CLI
+        - hashtopia.org
+        - knowledge.hashtopia.org
+    validations:
+      required: true
+
+  - type: dropdown
+    id: a11y-type
+    attributes:
+      label: Accessibility Type
+      options:
+        - Visual - Contrast too low
+        - Visual - Text too small
+        - Visual - Colorblind unfriendly
+        - Visual - Animation/flashing
+        - Motor - Controls too precise
+        - Motor - Time pressure too strict
+        - Cognitive - Instructions unclear
+        - Cognitive - Too much at once
+        - Audio - No captions/subtitles
+        - Audio - Audio-only information
+        - Screen reader - Not accessible
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where?
+      placeholder: "Chapter 3 puzzle / Leaderboard page / CLI output"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's the barrier?
+      placeholder: |
+        The red/green indicators in the puzzle are impossible to
+        distinguish with red-green colorblindness.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Who is affected?
+      placeholder: |
+        ~8% of men have red-green colorblindness.
+        This makes the puzzle unsolvable for them.
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Fix
+      description: How could we make this accessible?
+      placeholder: |
+        Add shapes in addition to colors (checkmark vs X).
+        Or use blue/orange instead of red/green.
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Show the issue if visual
+    validations:
+      required: false
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name
+    validations:
+      required: true

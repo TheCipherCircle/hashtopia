@@ -1,0 +1,84 @@
+name: Puzzle Review
+description: Cipher or challenge needs adjustment
+title: "[PUZZLE] "
+labels: ["puzzle-review", "vex-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Puzzle Review Submission
+        *Vex's Queue - Cipher Keeping*
+
+  - type: input
+    id: puzzle
+    attributes:
+      label: Puzzle/Encounter
+      description: Which puzzle or challenge?
+      placeholder: Chapter 3 - The Vault Door cipher
+    validations:
+      required: true
+
+  - type: dropdown
+    id: puzzle-type
+    attributes:
+      label: Puzzle Type
+      options:
+        - Caesar Cipher
+        - Substitution
+        - Hash Crack
+        - Pattern Recognition
+        - Logic Puzzle
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Too Difficult
+        - Too Easy
+        - Hint Unclear
+        - Solution Ambiguous
+        - Broken/Unsolvable
+        - Not Fun
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's the problem?
+      placeholder: |
+        - Spent 30 minutes, no progress
+        - Hint doesn't help
+        - Multiple valid solutions but only one accepted
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Fix
+      description: How would you adjust it?
+
+  - type: input
+    id: time-spent
+    attributes:
+      label: Time Spent
+      placeholder: "~15 minutes"
+
+  - type: input
+    id: build
+    attributes:
+      label: Build Version
+      placeholder: v1.0-alpha
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name or GitHub username

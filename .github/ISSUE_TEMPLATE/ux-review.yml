@@ -1,0 +1,76 @@
+name: UX Review
+description: User experience issue or suggestion
+title: "[UX] "
+labels: ["ux-review", "prism-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## UX Review Submission
+        *Prism's Queue - Lens Analysis*
+
+  - type: input
+    id: location
+    attributes:
+      label: Location/Screen
+      description: Where did you encounter this?
+      placeholder: Main menu, Settings screen, Chapter select
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Confusing Flow
+        - Accessibility
+        - Responsiveness
+        - Missing Feedback
+        - Unclear Instructions
+        - Performance Feel
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Blocker (can't proceed)
+        - Major (significantly impacts experience)
+        - Minor (annoyance)
+        - Enhancement (nice to have)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect?
+      placeholder: |
+        Expected: ...
+        Actual: ...
+        Steps to reproduce: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Fix
+      description: How would you improve this?
+
+  - type: input
+    id: build
+    attributes:
+      label: Build Version
+      placeholder: v1.0-alpha
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: Your name or GitHub username

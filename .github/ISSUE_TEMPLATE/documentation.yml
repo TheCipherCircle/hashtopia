@@ -1,0 +1,91 @@
+name: Documentation Issue
+description: Typos, unclear instructions, missing info, outdated content
+title: "[DOCS] "
+labels: ["documentation", "loreth-queue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Documentation Issue
+        *Loreth's Queue - The Records Must Be True*
+
+        For typos, unclear instructions, missing information, and outdated content.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product / Location
+      options:
+        - SpellEngine - In-game text
+        - SpellEngine - README/docs
+        - HashChampions - In-app text
+        - HashChampions - README/docs
+        - PatternForge - Help text
+        - PatternForge - README/docs
+        - hashtopia.org - Website copy
+        - knowledge.hashtopia.org
+        - Educational textbook
+        - PDF campaign
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Typo / Grammar
+        - Unclear / Confusing
+        - Missing information
+        - Outdated / Wrong
+        - Broken link
+        - Formatting issue
+        - Translation issue
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Exact Location
+      description: File, page, or section
+      placeholder: "README.md line 45 / Chapter 2 intro / Help command output"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Text
+      description: What does it say now?
+      placeholder: '"To start the game, run `spellengine --satrt`"'
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Should Say
+      description: What should it say?
+      placeholder: '"To start the game, run `spellengine --start`"'
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Why is this confusing or what's missing?
+    validations:
+      required: false
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reporter
+      placeholder: Your name
+    validations:
+      required: true

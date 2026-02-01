@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "title": "Cipher Circle QA Portal",
+    "version": "1.0",
+    "github": {
+      "owner": "TheCipherCircle",
+      "repo": "SpellEngine"
+    }
+  },
+  "reviewTypes": {
+    "art": {
+      "name": "Art Review",
+      "agent": "Fraz",
+      "glyph": "◈",
+      "color": "#d3869b",
+      "labels": ["art-review", "fraz-queue"],
+      "template": "art-review",
+      "description": "Visual assets - sprites, backgrounds, UI elements",
+      "automatedChecks": ["dimensions", "format", "filesize"],
+      "humanChecks": ["style consistency", "appeal", "color palette", "readability"]
+    },
+    "audio": {
+      "name": "Audio Review",
+      "agent": "Echo",
+      "glyph": "♪",
+      "color": "#83a598",
+      "labels": ["audio-review", "echo-queue"],
+      "template": "audio-review",
+      "description": "Music, sound effects, ambience",
+      "automatedChecks": ["format", "duration", "samplerate", "clipping"],
+      "humanChecks": ["mood", "quality", "mixing", "looping", "emotional fit"]
+    },
+    "narrative": {
+      "name": "Narrative Review",
+      "agent": "Mirth",
+      "glyph": "≋",
+      "color": "#b8bb26",
+      "labels": ["narrative-review", "mirth-queue"],
+      "template": "narrative-review",
+      "description": "Story, dialogue, lore text",
+      "automatedChecks": ["spelling", "length", "formatting"],
+      "humanChecks": ["tone", "character voice", "flow", "emotional impact", "immersion"]
+    },
+    "puzzle": {
+      "name": "Puzzle Review",
+      "agent": "Vex",
+      "glyph": "⌘",
+      "color": "#fabd2f",
+      "labels": ["puzzle-review", "vex-queue"],
+      "template": "puzzle-review",
+      "description": "Ciphers, challenges, difficulty",
+      "automatedChecks": ["solvability", "solution-exists"],
+      "humanChecks": ["difficulty feel", "hint quality", "fun factor", "fairness"]
+    },
+    "ux": {
+      "name": "UX Review",
+      "agent": "Prism",
+      "glyph": "◐",
+      "color": "#8ec07c",
+      "labels": ["ux-review", "prism-queue"],
+      "template": "ux-review",
+      "description": "User experience, flow, accessibility",
+      "automatedChecks": ["click-paths", "load-times", "contrast"],
+      "humanChecks": ["intuitive", "confusing points", "accessibility", "satisfaction"]
+    },
+    "balance": {
+      "name": "Balance Review",
+      "agent": "Jinx",
+      "glyph": "☆",
+      "color": "#fe8019",
+      "labels": ["balance-review", "jinx-queue"],
+      "template": null,
+      "description": "XP curves, difficulty progression, pacing",
+      "automatedChecks": ["xp-math", "progression-curves"],
+      "humanChecks": ["feel", "pacing", "fairness", "reward satisfaction"]
+    },
+    "lore": {
+      "name": "Lore Review",
+      "agent": "Loreth",
+      "glyph": "◇",
+      "color": "#d65d0e",
+      "labels": ["lore-review", "loreth-queue"],
+      "template": null,
+      "description": "Canon consistency, world-building",
+      "automatedChecks": ["name-references", "timeline-check"],
+      "humanChecks": ["consistency", "contradictions", "gaps", "depth"]
+    }
+  },
+  "assetSources": {
+    "spellengine": {
+      "name": "SpellEngine / Dread Citadel",
+      "basePath": "/Users/petermckernan/Projects/SpellEngine",
+      "categories": {
+        "backgrounds": {
+          "path": "assets/images/backgrounds/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "sprites": {
+          "path": "assets/images/sprites/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "ui": {
+          "path": "assets/images/ui/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "music": {
+          "path": "assets/audio/music/",
+          "reviewType": "audio",
+          "pattern": "*.ogg"
+        },
+        "sfx": {
+          "path": "assets/audio/sfx/",
+          "reviewType": "audio",
+          "pattern": "*.ogg"
+        },
+        "encounters": {
+          "path": "content/adventures/dread_citadel/encounters/",
+          "reviewType": "narrative",
+          "pattern": "*.yaml"
+        },
+        "dialogues": {
+          "path": "content/dialogues/",
+          "reviewType": "narrative",
+          "pattern": "*.yaml"
+        }
+      }
+    },
+    "hashchampions": {
+      "name": "HashChampions",
+      "basePath": "/Users/petermckernan/Projects/HashChampions",
+      "categories": {
+        "hero": {
+          "path": "public/images/hero/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "leaderboard": {
+          "path": "public/images/leaderboard/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "ranks": {
+          "path": "public/images/icons/ranks/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "achievements": {
+          "path": "public/images/icons/achievements/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "profile": {
+          "path": "public/images/profile/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        }
+      }
+    }
+  },
+  "workflows": {
+    "pre-release": {
+      "name": "Pre-Release QA",
+      "description": "Full review before public release",
+      "reviewTypes": ["art", "audio", "narrative", "puzzle", "ux", "balance"],
+      "required": true
+    },
+    "art-pass": {
+      "name": "Art Pass",
+      "description": "Visual asset review only",
+      "reviewTypes": ["art"],
+      "required": false
+    },
+    "audio-pass": {
+      "name": "Audio Pass",
+      "description": "Audio asset review only",
+      "reviewTypes": ["audio"],
+      "required": false
+    },
+    "content-review": {
+      "name": "Content Review",
+      "description": "Narrative and puzzle review",
+      "reviewTypes": ["narrative", "puzzle", "lore"],
+      "required": false
+    },
+    "playtest": {
+      "name": "Playtest",
+      "description": "Full gameplay experience review",
+      "reviewTypes": ["ux", "balance", "puzzle"],
+      "required": false
+    }
+  }
+}
