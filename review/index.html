@@ -1115,13 +1115,10 @@
                     const parsed = JSON.parse(savedState);
                     if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
                         reviewState = parsed;
-                        console.log(`Loaded ${Object.keys(reviewState).length} saved reviews`);
                     } else {
-                        console.warn('Invalid review state structure, using empty state');
                         reviewState = {};
                     }
                 } catch (e) {
-                    console.error('Failed to parse saved state:', e);
                     reviewState = {};
                 }
             }
@@ -2115,7 +2112,6 @@
                     lastSaveTime = new Date();
                     updateSaveIndicator('saved');
                 } catch (e) {
-                    console.error('Autosave failed:', e);
                     updateSaveIndicator('error');
                 }
             }, 500);
@@ -2150,7 +2146,6 @@
                 lastSaveTime = new Date();
                 updateSaveIndicator('saved');
             } catch (e) {
-                console.error('Save failed:', e);
                 updateSaveIndicator('error');
                 alert('Save failed! Check browser storage limits.');
             }
