@@ -18,7 +18,17 @@
             --blue: #83a598;
             --purple: #d3869b;
             --aqua: #8ec07c;
+            /* Mode-specific accents */
+            --accent: var(--orange);
+            --mode-qa: #fe8019;
+            --mode-design: #d3869b;
         }
+
+        /* Mode switching */
+        body.design-mode { --accent: var(--mode-design); }
+        body.design-mode .header { border-bottom-color: var(--mode-design); }
+        body.design-mode .footer { border-top-color: var(--mode-design); }
+        body.design-mode .mode-indicator { background: var(--mode-design); }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -867,11 +877,1080 @@
 
         .kb-type-pill:hover { border-color: var(--orange); }
         .kb-type-pill.active { border-color: var(--orange); background: var(--orange); color: var(--bg); }
+
+        /* ═══════════════════════════════════════════════════════════════
+           NARRATIVE REVIEW PANEL
+           ═══════════════════════════════════════════════════════════════ */
+        .narrative-review-panel {
+            background: var(--bg-soft);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .narrative-header {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .context-badge {
+            background: var(--purple);
+            color: var(--bg);
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .encounter-badge {
+            background: var(--blue);
+            color: var(--bg);
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .speaker-badge {
+            background: var(--aqua);
+            color: var(--bg);
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .narrative-content {
+            margin-bottom: 1.5rem;
+        }
+
+        .text-segment {
+            background: var(--bg-hard);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--fg-dim);
+        }
+
+        .text-segment[data-type="intro"] { border-left-color: var(--purple); }
+        .text-segment[data-type="dialogue"] { border-left-color: var(--aqua); }
+        .text-segment[data-type="hint"] { border-left-color: var(--yellow); }
+        .text-segment[data-type="success"] { border-left-color: var(--green); }
+        .text-segment[data-type="failure"] { border-left-color: var(--red); }
+
+        .text-segment label {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--fg-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-display {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--fg);
+        }
+
+        .text-display.character-voice {
+            font-style: italic;
+            color: var(--aqua);
+        }
+
+        .text-display.hint {
+            color: var(--yellow);
+        }
+
+        .text-issues {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .text-issues button {
+            padding: 0.4rem 0.75rem;
+            background: var(--bg-hard);
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.15s;
+        }
+
+        .text-issues button:hover {
+            border-color: var(--orange);
+        }
+
+        .text-issues button.selected {
+            background: var(--orange);
+            border-color: var(--orange);
+            color: var(--bg);
+        }
+
+        .text-issues button[data-issue="typo"] { border-color: var(--yellow); }
+        .text-issues button[data-issue="grammar"] { border-color: var(--yellow); }
+        .text-issues button[data-issue="tone"] { border-color: var(--purple); }
+        .text-issues button[data-issue="lore-break"] { border-color: var(--red); }
+        .text-issues button[data-issue="unclear"] { border-color: var(--blue); }
+        .text-issues button[data-issue="too-long"] { border-color: var(--aqua); }
+        .text-issues button[data-issue="character-voice"] { border-color: var(--purple); }
+
+        /* ═══════════════════════════════════════════════════════════════
+           HINT REVIEW PANEL
+           ═══════════════════════════════════════════════════════════════ */
+        .hint-review-panel {
+            background: var(--bg-soft);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .encounter-context {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--fg-dim);
+        }
+
+        .encounter-context h3 {
+            color: var(--yellow);
+            margin-bottom: 0.5rem;
+        }
+
+        .target-hash {
+            font-family: monospace;
+            background: var(--bg-hard);
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--fg-dim);
+            margin-bottom: 0.25rem;
+        }
+
+        .answer {
+            font-size: 0.85rem;
+            color: var(--green);
+        }
+
+        .hint-ladder {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .hint-level {
+            background: var(--bg-hard);
+            border-radius: 6px;
+            padding: 1rem;
+            border-left: 4px solid var(--yellow);
+        }
+
+        .hint-level[data-level="1"] { border-left-color: var(--green); }
+        .hint-level[data-level="2"] { border-left-color: var(--yellow); }
+        .hint-level[data-level="3"] { border-left-color: var(--orange); }
+
+        .hint-level label {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--fg-dim);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .hint-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+            color: var(--fg);
+            font-style: italic;
+        }
+
+        .hint-verdict {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .hint-verdict button {
+            padding: 0.3rem 0.6rem;
+            background: transparent;
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .hint-verdict button:hover { border-color: var(--orange); }
+        .hint-verdict button.good { border-color: var(--green); }
+        .hint-verdict button.good:hover, .hint-verdict button.good.selected { background: var(--green); color: var(--bg); }
+        .hint-verdict button.too-easy { border-color: var(--yellow); }
+        .hint-verdict button.too-easy:hover, .hint-verdict button.too-easy.selected { background: var(--yellow); color: var(--bg); }
+        .hint-verdict button.too-hard { border-color: var(--red); }
+        .hint-verdict button.too-hard:hover, .hint-verdict button.too-hard.selected { background: var(--red); color: var(--bg); }
+
+        .hint-progression-check {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--fg-dim);
+        }
+
+        .hint-progression-check label {
+            display: block;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            color: var(--fg-dim);
+        }
+
+        .hint-progression-check select {
+            width: 100%;
+            background: var(--bg-hard);
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           FLAVOR TEXT GALLERY
+           ═══════════════════════════════════════════════════════════════ */
+        .flavor-gallery {
+            padding: 1rem;
+        }
+
+        .flavor-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .flavor-filter button {
+            padding: 0.4rem 0.8rem;
+            background: var(--bg-hard);
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .flavor-filter button:hover { border-color: var(--orange); }
+        .flavor-filter button.active { background: var(--orange); border-color: var(--orange); color: var(--bg); }
+
+        .flavor-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .flavor-card {
+            background: var(--bg-soft);
+            border: 2px solid var(--bg-hard);
+            border-radius: 8px;
+            padding: 1rem;
+            transition: border-color 0.15s;
+        }
+
+        .flavor-card:hover { border-color: var(--fg-dim); }
+        .flavor-card.approved { border-color: var(--green); }
+        .flavor-card.flagged { border-color: var(--yellow); }
+        .flavor-card.rejected { border-color: var(--red); }
+
+        .week-badge {
+            display: inline-block;
+            background: var(--purple);
+            color: var(--bg);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .flavor-text {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--fg);
+            margin-bottom: 0.75rem;
+            font-style: italic;
+        }
+
+        .mini-verdict {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .mini-verdict button {
+            flex: 1;
+            padding: 0.4rem;
+            background: transparent;
+            border: 2px solid var(--fg-dim);
+            color: var(--fg);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .mini-verdict button.approve { border-color: var(--green); }
+        .mini-verdict button.approve:hover, .mini-verdict button.approve.selected { background: var(--green); color: var(--bg); }
+        .mini-verdict button.flag { border-color: var(--yellow); }
+        .mini-verdict button.flag:hover, .mini-verdict button.flag.selected { background: var(--yellow); color: var(--bg); }
+        .mini-verdict button.reject { border-color: var(--red); }
+        .mini-verdict button.reject:hover, .mini-verdict button.reject.selected { background: var(--red); color: var(--bg); }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VOICE DIRECTION PANEL
+           ═══════════════════════════════════════════════════════════════ */
+        .voice-direction-panel {
+            padding: 1.5rem;
+        }
+
+        .character-card {
+            background: var(--bg-soft);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .character-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--fg-dim);
+        }
+
+        .character-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--aqua);
+        }
+
+        .voice-style {
+            font-size: 0.85rem;
+            color: var(--fg-dim);
+            font-style: italic;
+        }
+
+        .voice-settings {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .voice-settings .setting {
+            background: var(--bg-hard);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .voice-settings .setting label {
+            display: block;
+            font-size: 0.7rem;
+            color: var(--fg-dim);
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .voice-settings .setting code {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: var(--yellow);
+        }
+
+        .voice-settings .setting span {
+            font-size: 0.9rem;
+        }
+
+        .sample-lines h4 {
+            color: var(--fg-dim);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .sample-lines .line {
+            background: var(--bg-hard);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .sample-lines .line audio {
+            width: 100%;
+            height: 32px;
+            margin-bottom: 0.5rem;
+        }
+
+        .sample-lines .line p {
+            font-style: italic;
+            color: var(--fg);
+            margin-bottom: 0.5rem;
+        }
+
+        .line-verdict {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .line-verdict button {
+            padding: 0.3rem 0.6rem;
+            background: transparent;
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .line-verdict button:hover { border-color: var(--orange); }
+
+        /* Lore content display */
+        .lore-content {
+            background: var(--bg-hard);
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--fg);
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .lore-content h1, .lore-content h2, .lore-content h3 {
+            color: var(--orange);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .lore-content h1 { font-size: 1.3rem; }
+        .lore-content h2 { font-size: 1.1rem; }
+        .lore-content h3 { font-size: 1rem; }
+
+        /* ═══════════════════════════════════════════════════════════════
+           MODE TOGGLE
+           ═══════════════════════════════════════════════════════════════ */
+        .mode-toggle {
+            display: flex;
+            background: var(--bg);
+            border-radius: 20px;
+            padding: 3px;
+            gap: 2px;
+        }
+
+        .mode-toggle button {
+            padding: 0.4rem 1rem;
+            border: none;
+            border-radius: 18px;
+            background: transparent;
+            color: var(--fg-dim);
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .mode-toggle button:hover { color: var(--fg); }
+
+        .mode-toggle button.active {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        .mode-indicator {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: var(--accent);
+            color: var(--bg);
+            margin-left: 0.5rem;
+        }
+
+        /* Design mode unlock indicator */
+        .design-only {
+            display: none;
+        }
+        body.design-mode .design-only {
+            display: flex;
+        }
+        body.design-mode .qa-only {
+            display: none;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           COMMAND PALETTE (Cmd+K)
+           ═══════════════════════════════════════════════════════════════ */
+        .command-palette-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 15vh;
+        }
+
+        .command-palette-overlay.active {
+            display: flex;
+        }
+
+        .command-palette {
+            background: var(--bg-soft);
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+        .command-palette-input {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid var(--fg-dim);
+            gap: 0.75rem;
+        }
+
+        .command-palette-input .icon {
+            font-size: 1.2rem;
+            color: var(--fg-dim);
+        }
+
+        .command-palette-input input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: var(--fg);
+            font-size: 1.1rem;
+            outline: none;
+        }
+
+        .command-palette-input input::placeholder {
+            color: var(--fg-dim);
+        }
+
+        .command-palette-input .shortcut {
+            font-size: 0.75rem;
+            color: var(--fg-dim);
+            background: var(--bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+
+        .command-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .command-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background 0.1s;
+        }
+
+        .command-item:hover, .command-item.selected {
+            background: var(--bg-hard);
+        }
+
+        .command-item .icon {
+            width: 24px;
+            text-align: center;
+            margin-right: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .command-item .label {
+            flex: 1;
+        }
+
+        .command-item .shortcut {
+            font-size: 0.75rem;
+            color: var(--fg-dim);
+            background: var(--bg);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        .command-section {
+            padding: 0.5rem 1rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--fg-dim);
+            background: var(--bg-hard);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           FOCUS / ZEN MODE
+           ═══════════════════════════════════════════════════════════════ */
+        body.focus-mode .header,
+        body.focus-mode .sidebar,
+        body.focus-mode .footer {
+            display: none !important;
+        }
+
+        body.focus-mode .layout {
+            min-height: 100vh;
+        }
+
+        body.focus-mode .main {
+            padding: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        body.focus-mode .detail-view {
+            height: 100vh;
+        }
+
+        .focus-exit-hint {
+            display: none;
+            position: fixed;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-hard);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--fg-dim);
+            z-index: 100;
+        }
+
+        body.focus-mode .focus-exit-hint {
+            display: block;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ENHANCED CANVAS ANNOTATION (Obsidian-style)
+           ═══════════════════════════════════════════════════════════════ */
+        .canvas-toolbar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            gap: 4px;
+            background: var(--bg-hard);
+            padding: 6px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 20;
+        }
+
+        .canvas-toolbar button {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-soft);
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.15s;
+        }
+
+        .canvas-toolbar button:hover {
+            border-color: var(--accent);
+            background: var(--bg);
+        }
+
+        .canvas-toolbar button.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--bg);
+        }
+
+        .canvas-toolbar .separator {
+            width: 1px;
+            background: var(--fg-dim);
+            margin: 4px 4px;
+        }
+
+        .canvas-toolbar .color-picker {
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
+            border: 2px solid var(--fg-dim);
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .canvas-toolbar select {
+            background: var(--bg-soft);
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            padding: 0.3rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+
+        /* Annotation labels */
+        .annotation-label {
+            position: absolute;
+            background: var(--red);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .annotation-note {
+            position: absolute;
+            background: var(--bg-soft);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            padding: 0.5rem;
+            max-width: 200px;
+            font-size: 0.8rem;
+            z-index: 30;
+        }
+
+        .annotation-note textarea {
+            width: 100%;
+            background: var(--bg-hard);
+            border: none;
+            color: var(--fg);
+            resize: none;
+            font-size: 0.8rem;
+            padding: 0.25rem;
+            border-radius: 3px;
+        }
+
+        /* Canvas zoom controls */
+        .canvas-zoom {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            gap: 4px;
+            background: var(--bg-hard);
+            padding: 4px;
+            border-radius: 6px;
+            z-index: 20;
+        }
+
+        .canvas-zoom button {
+            width: 28px;
+            height: 28px;
+            background: var(--bg-soft);
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .canvas-zoom span {
+            padding: 0 0.5rem;
+            font-size: 0.8rem;
+            color: var(--fg-dim);
+            display: flex;
+            align-items: center;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           INLINE TEXT EDITING (Design Mode)
+           ═══════════════════════════════════════════════════════════════ */
+        .editable-text {
+            position: relative;
+        }
+
+        .editable-text .edit-trigger {
+            position: absolute;
+            top: 0.25rem;
+            right: 0.25rem;
+            opacity: 0;
+            background: var(--accent);
+            color: var(--bg);
+            border: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        body.design-mode .editable-text:hover .edit-trigger {
+            opacity: 1;
+        }
+
+        .text-editor-panel {
+            background: var(--bg-hard);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .text-editor-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .text-editor-side {
+            background: var(--bg-soft);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .text-editor-side label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--fg-dim);
+            margin-bottom: 0.5rem;
+        }
+
+        .text-editor-side .original {
+            color: var(--fg-dim);
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .text-editor-side textarea {
+            width: 100%;
+            min-height: 120px;
+            background: var(--bg-hard);
+            border: 1px solid var(--fg-dim);
+            color: var(--fg);
+            padding: 0.75rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            resize: vertical;
+            font-family: inherit;
+        }
+
+        .text-editor-side textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .text-editor-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--fg-dim);
+        }
+
+        .char-counter {
+            font-size: 0.8rem;
+            color: var(--fg-dim);
+        }
+
+        .char-counter.warning { color: var(--yellow); }
+        .char-counter.error { color: var(--red); }
+
+        .text-editor-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        /* Diff highlighting */
+        .diff-view {
+            font-family: monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .diff-removed {
+            background: rgba(251, 73, 52, 0.2);
+            color: var(--red);
+            text-decoration: line-through;
+        }
+
+        .diff-added {
+            background: rgba(184, 187, 38, 0.2);
+            color: var(--green);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           DRAG & DROP HINTS
+           ═══════════════════════════════════════════════════════════════ */
+        .hint-ladder.sortable .hint-level {
+            cursor: grab;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .hint-ladder.sortable .hint-level:active {
+            cursor: grabbing;
+        }
+
+        .hint-ladder.sortable .hint-level.dragging {
+            opacity: 0.5;
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .hint-ladder.sortable .hint-level .drag-handle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            color: var(--fg-dim);
+            cursor: grab;
+            margin-right: 0.5rem;
+        }
+
+        .hint-level-header {
+            display: flex;
+            align-items: center;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           TOAST NOTIFICATIONS
+           ═══════════════════════════════════════════════════════════════ */
+        .toast-container {
+            position: fixed;
+            bottom: 80px;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            z-index: 1500;
+        }
+
+        .toast {
+            background: var(--bg-soft);
+            border: 1px solid var(--fg-dim);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            animation: slideIn 0.2s ease-out;
+            max-width: 300px;
+        }
+
+        .toast.success { border-color: var(--green); }
+        .toast.success .toast-icon { color: var(--green); }
+        .toast.error { border-color: var(--red); }
+        .toast.error .toast-icon { color: var(--red); }
+        .toast.info { border-color: var(--blue); }
+        .toast.info .toast-icon { color: var(--blue); }
+
+        .toast-icon { font-size: 1.2rem; }
+        .toast-message { flex: 1; font-size: 0.9rem; }
+        .toast-close {
+            background: none;
+            border: none;
+            color: var(--fg-dim);
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideOut {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+
+        .toast.hiding {
+            animation: slideOut 0.2s ease-in forwards;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           EDITORIAL QUEUE (Pending Edits Dashboard)
+           ═══════════════════════════════════════════════════════════════ */
+        .editorial-queue {
+            background: var(--bg-soft);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .editorial-queue h3 {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .editorial-queue h3 .count {
+            background: var(--accent);
+            color: var(--bg);
+            padding: 0.1rem 0.4rem;
+            border-radius: 10px;
+            font-size: 0.75rem;
+        }
+
+        .edit-item {
+            background: var(--bg-hard);
+            border-radius: 6px;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .edit-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .edit-item-title {
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .edit-item-meta {
+            font-size: 0.75rem;
+            color: var(--fg-dim);
+        }
+
+        .edit-item-diff {
+            font-size: 0.8rem;
+            margin: 0.5rem 0;
+        }
+
+        .edit-item-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .edit-item-actions button {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>⚔ QA Portal</h1>
+        <div style="display:flex;align-items:center;gap:1rem;">
+            <h1>⚔ QA Portal</h1>
+            <div class="mode-toggle">
+                <button id="qaModeBtn" class="active" onclick="setMode('qa')">QA Mode</button>
+                <button id="designModeBtn" onclick="setMode('design')">Design Mode</button>
+            </div>
+        </div>
         <div class="header-controls">
             <select id="projectSelect" onchange="loadProject()"></select>
             <select id="workflowSelect" onchange="applyWorkflow()">
@@ -879,15 +1958,37 @@
                 <option value="art">Art Only</option>
                 <option value="audio">Audio Only</option>
                 <option value="narrative">Narrative Only</option>
+                <option value="lore">Lore Only</option>
+                <option value="vocal">Vocal Only</option>
             </select>
             <div class="view-toggle">
                 <button id="listViewBtn" onclick="setView('list')" title="List View">☰</button>
                 <button id="gridViewBtn" class="active" onclick="setView('grid')" title="Grid View">▦</button>
                 <button id="detailViewBtn" onclick="setView('detail')" title="Detail Review">▣</button>
             </div>
+            <button class="btn btn-secondary design-only" onclick="openEditorialQueue()" title="Pending Edits">📝 Edits</button>
             <button class="btn btn-secondary" onclick="openKnowledgeBase()" title="Knowledge Base Suggestion">📚 KB</button>
+            <button class="btn btn-secondary" onclick="toggleFocusMode()" title="Focus Mode (Cmd+\\)">◐</button>
         </div>
     </header>
+
+    <!-- Command Palette -->
+    <div class="command-palette-overlay" id="commandPalette">
+        <div class="command-palette">
+            <div class="command-palette-input">
+                <span class="icon">⌘</span>
+                <input type="text" id="commandSearch" placeholder="Type a command..." autocomplete="off">
+                <span class="shortcut">esc</span>
+            </div>
+            <div class="command-list" id="commandList"></div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Focus Mode Exit Hint -->
+    <div class="focus-exit-hint">Press <strong>Esc</strong> or <strong>Cmd+\</strong> to exit focus mode</div>
 
     <!-- Knowledge Base Suggestion Modal -->
     <div class="modal-overlay" id="kbModal">
@@ -1064,13 +2165,17 @@
         const REVIEW_TYPES = {
             art: { name: "Art", glyph: "◈", color: "#d3869b", agent: "Fraz" },
             audio: { name: "Audio", glyph: "♪", color: "#83a598", agent: "Echo" },
-            narrative: { name: "Narrative", glyph: "≋", color: "#b8bb26", agent: "Mirth" }
+            narrative: { name: "Narrative", glyph: "≋", color: "#b8bb26", agent: "Mirth" },
+            lore: { name: "Lore", glyph: "◇", color: "#d65d0e", agent: "Loreth" },
+            vocal: { name: "Vocal", glyph: "♬", color: "#458588", agent: "Echo" }
         };
 
         const ISSUE_REASONS = {
             art: ["Style mismatch", "Wrong colors", "Low quality", "Wrong size", "Doesn't fit mood", "Too busy", "Too plain", "Needs variants"],
             audio: ["Wrong mood", "Too loud", "Too quiet", "Bad loop", "Quality issues", "Wrong length", "Doesn't fit scene", "Bad fade"],
-            narrative: ["Tone wrong", "Typo/grammar", "Breaks lore", "Too long", "Unclear", "Out of character", "Wrong voice"]
+            narrative: ["Tone wrong", "Typo/grammar", "Breaks lore", "Too long", "Unclear", "Out of character", "Wrong voice"],
+            lore: ["Contradicts canon", "Timeline error", "Character inconsistency", "Missing context", "Needs expansion", "Redundant", "Wrong tone"],
+            vocal: ["Wrong delivery", "Pacing off", "Pronunciation error", "Wrong emotion", "Doesn't match character", "Audio quality", "Re-record needed"]
         };
 
         const PRIORITIES = [
@@ -1099,11 +2204,488 @@
         const AUTOSAVE_INTERVAL = 5000; // 5 seconds
 
         // Annotation state
-        let annotationMode = 'circle'; // 'circle', 'rect', 'arrow'
+        let annotationMode = 'circle'; // 'circle', 'rect', 'arrow', 'freehand', 'text'
         let isDrawing = false;
         let startX = 0, startY = 0;
         let currentCanvas = null;
         let currentCtx = null;
+        let annotationColor = '#fb4934';
+        let annotationSize = 3;
+        let canvasZoom = 1;
+        let freehandPoints = [];
+
+        // Mode state
+        let currentMode = 'qa'; // 'qa' or 'design'
+        let focusModeActive = false;
+        let editorialQueue = []; // Pending edits from design mode
+        const EDITORIAL_STORAGE_KEY = 'qa-portal-edits';
+
+        // Command palette
+        const COMMANDS = [
+            { id: 'approve', label: 'Approve current item', icon: '✓', shortcut: 'A', action: () => quickApprove() },
+            { id: 'flag', label: 'Flag for review', icon: '⚑', shortcut: 'F', action: () => quickFlag() },
+            { id: 'reject', label: 'Needs revision', icon: '✗', shortcut: 'X', action: () => quickReject() },
+            { id: 'next', label: 'Next item', icon: '→', shortcut: '→', action: () => nextAsset() },
+            { id: 'prev', label: 'Previous item', icon: '←', shortcut: '←', action: () => prevAsset() },
+            { id: 'edit', label: 'Edit text (Design mode)', icon: '✎', shortcut: 'E', action: () => startEditing(), designOnly: true },
+            { id: 'focus', label: 'Toggle focus mode', icon: '◐', shortcut: 'Cmd+\\', action: () => toggleFocusMode() },
+            { id: 'mode-qa', label: 'Switch to QA mode', icon: '🔍', shortcut: '1', action: () => setMode('qa') },
+            { id: 'mode-design', label: 'Switch to Design mode', icon: '✎', shortcut: '2', action: () => setMode('design') },
+            { id: 'view-list', label: 'List view', icon: '☰', shortcut: '', action: () => setView('list') },
+            { id: 'view-grid', label: 'Grid view', icon: '▦', shortcut: '', action: () => setView('grid') },
+            { id: 'view-detail', label: 'Detail view', icon: '▣', shortcut: '', action: () => setView('detail') },
+            { id: 'save', label: 'Save progress', icon: '💾', shortcut: 'Cmd+S', action: () => { saveState(); showToast('Progress saved', 'success'); } },
+            { id: 'export', label: 'Export edits', icon: '📤', shortcut: 'Cmd+E', action: () => exportEdits(), designOnly: true },
+        ];
+        let selectedCommandIndex = 0;
+
+        // ═══════════════════════════════════════════════════════════════
+        // MODE SWITCHING
+        // ═══════════════════════════════════════════════════════════════
+
+        function setMode(mode) {
+            currentMode = mode;
+            document.body.classList.toggle('design-mode', mode === 'design');
+            document.getElementById('qaModeBtn').classList.toggle('active', mode === 'qa');
+            document.getElementById('designModeBtn').classList.toggle('active', mode === 'design');
+
+            // Re-render to show/hide edit controls
+            if (currentView === 'detail') {
+                renderDetailView();
+            }
+
+            showToast(mode === 'design' ? 'Design mode: Editing enabled' : 'QA mode: Review only', 'info');
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // COMMAND PALETTE
+        // ═══════════════════════════════════════════════════════════════
+
+        function openCommandPalette() {
+            const overlay = document.getElementById('commandPalette');
+            overlay.classList.add('active');
+            document.getElementById('commandSearch').value = '';
+            document.getElementById('commandSearch').focus();
+            selectedCommandIndex = 0;
+            renderCommandList('');
+        }
+
+        function closeCommandPalette() {
+            document.getElementById('commandPalette').classList.remove('active');
+        }
+
+        function renderCommandList(filter) {
+            const list = document.getElementById('commandList');
+            const filteredCommands = COMMANDS.filter(cmd => {
+                if (cmd.designOnly && currentMode !== 'design') return false;
+                if (!filter) return true;
+                return cmd.label.toLowerCase().includes(filter.toLowerCase());
+            });
+
+            let html = '';
+            filteredCommands.forEach((cmd, i) => {
+                html += `
+                    <div class="command-item ${i === selectedCommandIndex ? 'selected' : ''}"
+                         onclick="executeCommand('${cmd.id}')"
+                         data-index="${i}">
+                        <span class="icon">${cmd.icon}</span>
+                        <span class="label">${escapeHtml(cmd.label)}</span>
+                        ${cmd.shortcut ? `<span class="shortcut">${escapeHtml(cmd.shortcut)}</span>` : ''}
+                    </div>
+                `;
+            });
+
+            list.innerHTML = html || '<div style="padding:1rem;color:var(--fg-dim);text-align:center;">No commands found</div>';
+        }
+
+        function executeCommand(cmdId) {
+            const cmd = COMMANDS.find(c => c.id === cmdId);
+            if (cmd && cmd.action) {
+                cmd.action();
+            }
+            closeCommandPalette();
+        }
+
+        function navigateCommands(direction) {
+            const items = document.querySelectorAll('.command-item');
+            if (items.length === 0) return;
+
+            selectedCommandIndex += direction;
+            if (selectedCommandIndex < 0) selectedCommandIndex = items.length - 1;
+            if (selectedCommandIndex >= items.length) selectedCommandIndex = 0;
+
+            items.forEach((item, i) => {
+                item.classList.toggle('selected', i === selectedCommandIndex);
+            });
+
+            items[selectedCommandIndex]?.scrollIntoView({ block: 'nearest' });
+        }
+
+        function executeSelectedCommand() {
+            const items = document.querySelectorAll('.command-item');
+            if (items[selectedCommandIndex]) {
+                const cmdId = COMMANDS.filter(cmd => {
+                    if (cmd.designOnly && currentMode !== 'design') return false;
+                    return true;
+                })[selectedCommandIndex]?.id;
+                if (cmdId) executeCommand(cmdId);
+            }
+        }
+
+        // Quick actions for command palette
+        function quickApprove() {
+            if (filteredAssets[detailIndex]) {
+                const key = filteredAssets[detailIndex].key;
+                setDecision(key, 'approve');
+                showToast('Approved', 'success');
+            }
+        }
+
+        function quickFlag() {
+            if (filteredAssets[detailIndex]) {
+                const key = filteredAssets[detailIndex].key;
+                setDecision(key, 'minor');
+                showToast('Flagged for review', 'info');
+            }
+        }
+
+        function quickReject() {
+            if (filteredAssets[detailIndex]) {
+                const key = filteredAssets[detailIndex].key;
+                setDecision(key, 'redesign');
+                showToast('Marked for revision', 'info');
+            }
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // FOCUS MODE
+        // ═══════════════════════════════════════════════════════════════
+
+        function toggleFocusMode() {
+            focusModeActive = !focusModeActive;
+            document.body.classList.toggle('focus-mode', focusModeActive);
+
+            if (focusModeActive && currentView !== 'detail') {
+                setView('detail');
+            }
+
+            showToast(focusModeActive ? 'Focus mode enabled' : 'Focus mode disabled', 'info');
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // TOAST NOTIFICATIONS
+        // ═══════════════════════════════════════════════════════════════
+
+        function showToast(message, type = 'info', duration = 3000) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+
+            const icons = { success: '✓', error: '✗', info: 'ℹ' };
+            toast.innerHTML = `
+                <span class="toast-icon">${icons[type] || 'ℹ'}</span>
+                <span class="toast-message">${escapeHtml(message)}</span>
+                <button class="toast-close" onclick="this.parentElement.remove()">×</button>
+            `;
+
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.add('hiding');
+                setTimeout(() => toast.remove(), 200);
+            }, duration);
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // INLINE TEXT EDITING (Design Mode)
+        // ═══════════════════════════════════════════════════════════════
+
+        let currentEditingAsset = null;
+        let editDrafts = {};
+
+        function startEditing() {
+            if (currentMode !== 'design') {
+                showToast('Switch to Design mode to edit', 'error');
+                return;
+            }
+
+            const asset = filteredAssets[detailIndex];
+            if (!asset || !asset.text) {
+                showToast('No editable text content', 'error');
+                return;
+            }
+
+            currentEditingAsset = asset;
+            showTextEditor(asset);
+        }
+
+        function showTextEditor(asset) {
+            const preview = document.getElementById('detailPreview');
+            const existingDraft = editDrafts[asset.key] || asset.text;
+
+            preview.innerHTML = `
+                <div class="text-editor-panel" style="width: 90%; max-width: 900px;">
+                    <div class="narrative-header">
+                        ${asset.context ? `<span class="context-badge">${escapeHtml(asset.context)}</span>` : ''}
+                        <span class="mode-indicator">EDITING</span>
+                    </div>
+
+                    <div class="text-editor-split">
+                        <div class="text-editor-side">
+                            <label>Original</label>
+                            <div class="original">"${escapeHtml(asset.text)}"</div>
+                        </div>
+                        <div class="text-editor-side">
+                            <label>Your Edit</label>
+                            <textarea id="editTextarea" placeholder="Your edited version...">${escapeHtml(existingDraft)}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="text-editor-footer">
+                        <div class="char-counter" id="charCounter">${existingDraft.length} characters</div>
+                        <div class="text-editor-actions">
+                            <button class="btn btn-secondary" onclick="showDiffView()">View Diff</button>
+                            <button class="btn btn-secondary" onclick="cancelEdit()">Cancel</button>
+                            <button class="btn btn-secondary" onclick="saveDraft()">Save Draft</button>
+                            <button class="btn btn-primary" onclick="submitEdit()">Submit Edit</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Character counter
+            const textarea = document.getElementById('editTextarea');
+            textarea.addEventListener('input', () => {
+                const count = textarea.value.length;
+                const counter = document.getElementById('charCounter');
+                counter.textContent = `${count} characters`;
+                counter.className = 'char-counter' + (count > 500 ? ' warning' : '') + (count > 1000 ? ' error' : '');
+            });
+            textarea.focus();
+        }
+
+        function showDiffView() {
+            const original = currentEditingAsset.text;
+            const edited = document.getElementById('editTextarea').value;
+
+            // Simple diff visualization
+            const diffHtml = computeSimpleDiff(original, edited);
+
+            const modal = document.createElement('div');
+            modal.className = 'modal-overlay active';
+            modal.innerHTML = `
+                <div class="modal" style="max-width:700px;">
+                    <div class="modal-header">
+                        <h2>Changes Preview</h2>
+                        <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="diff-view">${diffHtml}</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" onclick="this.closest('.modal-overlay').remove()">Close</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function computeSimpleDiff(original, edited) {
+            if (original === edited) {
+                return '<p style="color:var(--fg-dim);">No changes</p>';
+            }
+
+            // Simple word-level diff
+            const origWords = original.split(/\s+/);
+            const editWords = edited.split(/\s+/);
+
+            let html = '<p>';
+
+            // Very simple: show original with strikethrough, then edited
+            html += '<span style="color:var(--fg-dim);text-decoration:line-through;">' + escapeHtml(original) + '</span>';
+            html += '<br><br>';
+            html += '<span style="color:var(--green);">' + escapeHtml(edited) + '</span>';
+
+            html += '</p>';
+            return html;
+        }
+
+        function cancelEdit() {
+            currentEditingAsset = null;
+            renderDetailView();
+        }
+
+        function saveDraft() {
+            if (!currentEditingAsset) return;
+
+            const edited = document.getElementById('editTextarea').value;
+            editDrafts[currentEditingAsset.key] = edited;
+
+            // Save to localStorage
+            localStorage.setItem('qa-portal-drafts', JSON.stringify(editDrafts));
+
+            showToast('Draft saved', 'success');
+        }
+
+        function submitEdit() {
+            if (!currentEditingAsset) return;
+
+            const edited = document.getElementById('editTextarea').value;
+            const original = currentEditingAsset.text;
+
+            if (edited === original) {
+                showToast('No changes to submit', 'info');
+                return;
+            }
+
+            // Add to editorial queue
+            const edit = {
+                id: Date.now(),
+                assetKey: currentEditingAsset.key,
+                assetName: currentEditingAsset.name,
+                context: currentEditingAsset.context,
+                original: original,
+                edited: edited,
+                submittedAt: new Date().toISOString(),
+                submittedBy: document.getElementById('reviewerName').value || 'Anonymous',
+                status: 'pending'
+            };
+
+            editorialQueue.push(edit);
+            localStorage.setItem(EDITORIAL_STORAGE_KEY, JSON.stringify(editorialQueue));
+
+            // Clear draft
+            delete editDrafts[currentEditingAsset.key];
+            localStorage.setItem('qa-portal-drafts', JSON.stringify(editDrafts));
+
+            currentEditingAsset = null;
+            showToast('Edit submitted for review', 'success');
+            renderDetailView();
+        }
+
+        function loadEditorialQueue() {
+            const saved = localStorage.getItem(EDITORIAL_STORAGE_KEY);
+            if (saved) {
+                try {
+                    editorialQueue = JSON.parse(saved);
+                } catch (e) {
+                    editorialQueue = [];
+                }
+            }
+
+            // Load drafts
+            const drafts = localStorage.getItem('qa-portal-drafts');
+            if (drafts) {
+                try {
+                    editDrafts = JSON.parse(drafts);
+                } catch (e) {
+                    editDrafts = {};
+                }
+            }
+        }
+
+        function openEditorialQueue() {
+            const pending = editorialQueue.filter(e => e.status === 'pending');
+
+            const modal = document.createElement('div');
+            modal.className = 'modal-overlay active';
+            modal.id = 'editorialQueueModal';
+            modal.innerHTML = `
+                <div class="modal" style="max-width:700px;">
+                    <div class="modal-header">
+                        <h2>📝 Pending Edits <span style="background:var(--accent);color:var(--bg);padding:0.1rem 0.5rem;border-radius:10px;font-size:0.8rem;">${pending.length}</span></h2>
+                        <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">×</button>
+                    </div>
+                    <div class="modal-body" style="max-height:60vh;overflow-y:auto;">
+                        ${pending.length === 0 ? '<p style="color:var(--fg-dim);text-align:center;padding:2rem;">No pending edits</p>' : ''}
+                        ${pending.map(edit => `
+                            <div class="edit-item">
+                                <div class="edit-item-header">
+                                    <span class="edit-item-title">${escapeHtml(edit.assetName)}</span>
+                                    <span class="edit-item-meta">${escapeHtml(edit.submittedBy)} · ${new Date(edit.submittedAt).toLocaleDateString()}</span>
+                                </div>
+                                ${edit.context ? `<div style="font-size:0.75rem;color:var(--fg-dim);margin-bottom:0.5rem;">${escapeHtml(edit.context)}</div>` : ''}
+                                <div class="edit-item-diff">
+                                    <div style="color:var(--red);text-decoration:line-through;margin-bottom:0.25rem;">"${escapeHtml(edit.original.substring(0, 100))}${edit.original.length > 100 ? '...' : ''}"</div>
+                                    <div style="color:var(--green);">"${escapeHtml(edit.edited.substring(0, 100))}${edit.edited.length > 100 ? '...' : ''}"</div>
+                                </div>
+                                <div class="edit-item-actions">
+                                    <button class="btn btn-secondary" onclick="viewFullEdit('${edit.id}')">View Full</button>
+                                    <button class="btn btn-secondary" style="border-color:var(--red);" onclick="rejectEdit('${edit.id}')">Reject</button>
+                                    <button class="btn btn-primary" onclick="approveEdit('${edit.id}')">Approve</button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" onclick="exportEdits()">Export All</button>
+                        <button class="btn btn-secondary" onclick="this.closest('.modal-overlay').remove()">Close</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function viewFullEdit(editId) {
+            const edit = editorialQueue.find(e => e.id == editId);
+            if (!edit) return;
+
+            alert(`Original:\n"${edit.original}"\n\nEdited:\n"${edit.edited}"`);
+        }
+
+        function approveEdit(editId) {
+            const idx = editorialQueue.findIndex(e => e.id == editId);
+            if (idx >= 0) {
+                editorialQueue[idx].status = 'approved';
+                editorialQueue[idx].approvedAt = new Date().toISOString();
+                localStorage.setItem(EDITORIAL_STORAGE_KEY, JSON.stringify(editorialQueue));
+                showToast('Edit approved', 'success');
+                document.getElementById('editorialQueueModal')?.remove();
+                openEditorialQueue();
+            }
+        }
+
+        function rejectEdit(editId) {
+            const idx = editorialQueue.findIndex(e => e.id == editId);
+            if (idx >= 0) {
+                editorialQueue[idx].status = 'rejected';
+                localStorage.setItem(EDITORIAL_STORAGE_KEY, JSON.stringify(editorialQueue));
+                showToast('Edit rejected', 'info');
+                document.getElementById('editorialQueueModal')?.remove();
+                openEditorialQueue();
+            }
+        }
+
+        function exportEdits() {
+            const approved = editorialQueue.filter(e => e.status === 'approved');
+            if (approved.length === 0) {
+                showToast('No approved edits to export', 'info');
+                return;
+            }
+
+            const exportData = {
+                exportedAt: new Date().toISOString(),
+                edits: approved.map(e => ({
+                    asset: e.assetKey,
+                    name: e.assetName,
+                    context: e.context,
+                    original: e.original,
+                    edited: e.edited,
+                    submittedBy: e.submittedBy,
+                    approvedAt: e.approvedAt
+                }))
+            };
+
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `editorial-edits-${Date.now()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+
+            showToast(`Exported ${approved.length} edits`, 'success');
+        }
 
         async function init() {
             const savedName = localStorage.getItem('qa-reviewer-name');
@@ -1123,6 +2705,12 @@
                 }
             }
 
+            // Load editorial queue and drafts
+            loadEditorialQueue();
+
+            // Set up keyboard shortcuts
+            setupKeyboardShortcuts();
+
             try {
                 const response = await fetch('manifest.json');
                 manifest = await response.json();
@@ -1137,6 +2725,82 @@
                     </div>
                 `;
             }
+        }
+
+        function setupKeyboardShortcuts() {
+            document.addEventListener('keydown', (e) => {
+                // Command palette
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault();
+                    openCommandPalette();
+                    return;
+                }
+
+                // Command palette navigation
+                if (document.getElementById('commandPalette').classList.contains('active')) {
+                    if (e.key === 'Escape') {
+                        closeCommandPalette();
+                        return;
+                    }
+                    if (e.key === 'ArrowDown') {
+                        e.preventDefault();
+                        navigateCommands(1);
+                        return;
+                    }
+                    if (e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        navigateCommands(-1);
+                        return;
+                    }
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        executeSelectedCommand();
+                        return;
+                    }
+                    return; // Let typing work in the search box
+                }
+
+                // Focus mode toggle
+                if ((e.metaKey || e.ctrlKey) && e.key === '\\') {
+                    e.preventDefault();
+                    toggleFocusMode();
+                    return;
+                }
+
+                // Exit focus mode with Escape
+                if (e.key === 'Escape' && focusModeActive) {
+                    toggleFocusMode();
+                    return;
+                }
+
+                // Save shortcut
+                if ((e.metaKey || e.ctrlKey) && e.key === 's') {
+                    e.preventDefault();
+                    saveState();
+                    showToast('Progress saved', 'success');
+                    return;
+                }
+
+                // Mode switching
+                if (!e.metaKey && !e.ctrlKey && !e.target.matches('input, textarea, select')) {
+                    if (e.key === '1') { setMode('qa'); return; }
+                    if (e.key === '2') { setMode('design'); return; }
+
+                    // Quick actions in detail view
+                    if (currentView === 'detail') {
+                        if (e.key === 'a' || e.key === 'A') { quickApprove(); return; }
+                        if (e.key === 'f' || e.key === 'F') { quickFlag(); return; }
+                        if (e.key === 'x' || e.key === 'X') { quickReject(); return; }
+                        if (e.key === 'e' || e.key === 'E') { startEditing(); return; }
+                    }
+                }
+            });
+
+            // Command palette search
+            document.getElementById('commandSearch')?.addEventListener('input', (e) => {
+                selectedCommandIndex = 0;
+                renderCommandList(e.target.value);
+            });
         }
 
         function populateProjects() {
@@ -1354,12 +3018,32 @@
                 const typeInfo = REVIEW_TYPES[asset.reviewType];
                 const assetUrl = getAssetUrl(asset);
                 const isAudio = asset.reviewType === 'audio';
+                const isNarrative = asset.reviewType === 'narrative';
+                const isLore = asset.reviewType === 'lore';
+                const isVocal = asset.reviewType === 'vocal';
+                const hasTextContent = asset.text || asset.contentType;
 
                 let preview;
                 if (isAudio) {
                     preview = `<div class="asset-preview audio">
                         <span class="icon">♪</span>
                         <audio controls src="${assetUrl}" preload="none"></audio>
+                    </div>`;
+                } else if ((isNarrative || isLore || isVocal) && hasTextContent) {
+                    // Text-based content preview
+                    const truncatedText = (asset.text || '').substring(0, 120);
+                    const contentType = asset.contentType || 'text';
+                    const isHint = contentType === 'hint';
+                    preview = `<div class="asset-preview" style="flex-direction:column;padding:1rem;align-items:flex-start;">
+                        <span class="type-badge" style="background:${typeInfo.color};position:static;margin-bottom:0.5rem;">${typeInfo.glyph} ${escapeHtml(contentType)}</span>
+                        ${asset.context ? `<small style="color:var(--fg-dim);margin-bottom:0.25rem;">${escapeHtml(asset.context)}</small>` : ''}
+                        <div style="font-style:italic;color:var(--fg);font-size:0.85rem;line-height:1.4;overflow:hidden;max-height:80px;${isHint ? 'color:var(--yellow);' : ''}">"${escapeHtml(truncatedText)}${truncatedText.length < (asset.text || '').length ? '...' : ''}"</div>
+                    </div>`;
+                } else if (isLore || isVocal) {
+                    // Markdown file preview (no extracted text)
+                    preview = `<div class="asset-preview" style="flex-direction:column;">
+                        <span class="type-badge" style="background:${typeInfo.color};position:static;">${typeInfo.glyph}</span>
+                        <span style="color:var(--fg-dim);font-size:0.85rem;margin-top:0.5rem;">📄 ${escapeHtml(asset.name)}</span>
                     </div>`;
                 } else {
                     preview = `<div class="asset-preview">
@@ -1373,7 +3057,7 @@
                         ${preview}
                         <div class="asset-info">
                             <div class="asset-name">${escapeHtml(asset.name)}</div>
-                            <div class="asset-meta">${escapeHtml(asset.category)} · ${escapeHtml(asset.dimensions || '')}</div>
+                            <div class="asset-meta">${escapeHtml(asset.category)}${asset.dimensions ? ' · ' + escapeHtml(asset.dimensions) : ''}${asset.speaker ? ' · ' + escapeHtml(asset.speaker) : ''}</div>
                             <div class="verdict-buttons">
                                 <button class="verdict-btn approve ${state.verdict === 'approved' ? 'selected' : ''}"
                                         data-key="${escapeAttr(asset.key)}" data-verdict="approved">✓</button>
@@ -1427,6 +3111,11 @@
             const preview = document.getElementById('detailPreview');
             const annotations = state.annotations || [];
 
+            const isNarrative = asset.reviewType === 'narrative';
+            const isLore = asset.reviewType === 'lore';
+            const isVocal = asset.reviewType === 'vocal';
+            const hasTextContent = asset.text || asset.contentType;
+
             if (isAudio) {
                 preview.className = 'detail-preview audio';
                 preview.innerHTML = `
@@ -1434,19 +3123,128 @@
                     <div style="font-size: 1.2rem; color: var(--fg)">${escapeHtml(asset.name)}</div>
                     <audio controls src="${escapeAttr(assetUrl)}" style="width: 80%; max-width: 500px"></audio>
                 `;
-            } else {
-                // Art preview with annotation overlay
+            } else if (isNarrative && hasTextContent) {
+                // Narrative content preview
+                preview.className = 'detail-preview';
+                const contentType = asset.contentType || 'text';
+                const isHint = contentType === 'hint';
+
+                preview.innerHTML = `
+                    <div class="narrative-review-panel" style="width: 90%; max-width: 700px;">
+                        <div class="narrative-header">
+                            ${asset.context ? `<span class="context-badge">${escapeHtml(asset.context)}</span>` : ''}
+                            ${asset.speaker ? `<span class="speaker-badge">${escapeHtml(asset.speaker)}</span>` : ''}
+                            <span class="encounter-badge">${escapeHtml(contentType)}</span>
+                            ${isHint && asset.hintLevel ? `<span class="encounter-badge" style="background:var(--yellow)">Level ${asset.hintLevel}</span>` : ''}
+                        </div>
+                        <div class="narrative-content">
+                            <div class="text-segment" data-type="${escapeAttr(contentType)}">
+                                <label>${escapeHtml(contentType.replace('_', ' ').toUpperCase())}</label>
+                                <div class="text-display ${asset.speaker ? 'character-voice' : ''} ${isHint ? 'hint' : ''}">
+                                    "${escapeHtml(asset.text || 'No text content')}"
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-issues" id="textIssues">
+                            <button data-issue="typo" data-key="${escapeAttr(asset.key)}">Typo</button>
+                            <button data-issue="grammar" data-key="${escapeAttr(asset.key)}">Grammar</button>
+                            <button data-issue="tone" data-key="${escapeAttr(asset.key)}">Wrong Tone</button>
+                            <button data-issue="lore-break" data-key="${escapeAttr(asset.key)}">Breaks Lore</button>
+                            <button data-issue="unclear" data-key="${escapeAttr(asset.key)}">Unclear</button>
+                            <button data-issue="too-long" data-key="${escapeAttr(asset.key)}">Too Long</button>
+                            <button data-issue="character-voice" data-key="${escapeAttr(asset.key)}">Out of Character</button>
+                            ${isHint ? `
+                                <button data-issue="too-easy" data-key="${escapeAttr(asset.key)}" style="border-color:var(--green)">Too Easy</button>
+                                <button data-issue="too-hard" data-key="${escapeAttr(asset.key)}" style="border-color:var(--red)">Too Hard</button>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+                // Restore selected issues
+                if (state.textIssues) {
+                    state.textIssues.forEach(issue => {
+                        const btn = preview.querySelector(`button[data-issue="${issue}"]`);
+                        if (btn) btn.classList.add('selected');
+                    });
+                }
+            } else if (isLore) {
+                // Lore content preview (markdown files)
                 preview.className = 'detail-preview';
                 preview.innerHTML = `
-                    <div class="annotate-container" id="annotateContainer">
-                        <div class="annotate-tools">
-                            <button onclick="setAnnotationMode('circle')" class="${annotationMode === 'circle' ? 'active' : ''}" title="Circle">○</button>
-                            <button onclick="setAnnotationMode('rect')" class="${annotationMode === 'rect' ? 'active' : ''}" title="Rectangle">□</button>
-                            <button onclick="setAnnotationMode('arrow')" class="${annotationMode === 'arrow' ? 'active' : ''}" title="Arrow">→</button>
-                            <button onclick="clearAnnotations('${escapeAttr(asset.key)}')" title="Clear all">✕</button>
+                    <div style="width: 90%; max-width: 700px;">
+                        <div class="narrative-header">
+                            <span class="context-badge" style="background:var(--orange)">${escapeHtml(asset.category || 'Lore')}</span>
+                            <span class="encounter-badge">${escapeHtml(asset.name)}</span>
                         </div>
-                        <img id="annotateImg" src="${escapeAttr(assetUrl)}" alt="${escapeAttr(asset.name)}" onload="initAnnotationCanvas()">
+                        <div class="lore-content" id="loreContent">
+                            <p style="color:var(--fg-dim);font-style:italic;">Loading lore content...</p>
+                        </div>
+                        <div class="text-issues" style="margin-top:1rem;">
+                            <button data-issue="contradicts-canon" data-key="${escapeAttr(asset.key)}">Contradicts Canon</button>
+                            <button data-issue="timeline-error" data-key="${escapeAttr(asset.key)}">Timeline Error</button>
+                            <button data-issue="needs-expansion" data-key="${escapeAttr(asset.key)}">Needs Expansion</button>
+                            <button data-issue="missing-context" data-key="${escapeAttr(asset.key)}">Missing Context</button>
+                            <button data-issue="redundant" data-key="${escapeAttr(asset.key)}">Redundant</button>
+                        </div>
+                    </div>
+                `;
+                // Load markdown content
+                loadLoreContent(asset);
+            } else if (isVocal) {
+                // Vocal direction preview
+                preview.className = 'detail-preview';
+                preview.innerHTML = `
+                    <div class="voice-direction-panel" style="width: 90%; max-width: 700px;">
+                        <div class="character-card">
+                            <div class="character-header">
+                                <span class="character-name">${escapeHtml(asset.name)}</span>
+                                <span class="voice-style">Voice Direction Guide</span>
+                            </div>
+                            <div class="lore-content" id="vocalContent">
+                                <p style="color:var(--fg-dim);font-style:italic;">Loading voice guide...</p>
+                            </div>
+                        </div>
+                        <div class="text-issues" style="margin-top:1rem;">
+                            <button data-issue="delivery" data-key="${escapeAttr(asset.key)}">Delivery Notes</button>
+                            <button data-issue="pacing" data-key="${escapeAttr(asset.key)}">Pacing</button>
+                            <button data-issue="emotion" data-key="${escapeAttr(asset.key)}">Emotion</button>
+                            <button data-issue="pronunciation" data-key="${escapeAttr(asset.key)}">Pronunciation</button>
+                        </div>
+                    </div>
+                `;
+                // Load markdown content
+                loadVocalContent(asset);
+            } else {
+                // Art preview with enhanced Canvas-grade annotation
+                preview.className = 'detail-preview';
+                preview.innerHTML = `
+                    <div class="annotate-container" id="annotateContainer" style="position:relative;">
+                        <div class="canvas-toolbar">
+                            <button onclick="setAnnotationMode('circle')" class="${annotationMode === 'circle' ? 'active' : ''}" title="Circle (C)">○</button>
+                            <button onclick="setAnnotationMode('rect')" class="${annotationMode === 'rect' ? 'active' : ''}" title="Rectangle (R)">□</button>
+                            <button onclick="setAnnotationMode('arrow')" class="${annotationMode === 'arrow' ? 'active' : ''}" title="Arrow (A)">→</button>
+                            <button onclick="setAnnotationMode('freehand')" class="${annotationMode === 'freehand' ? 'active' : ''}" title="Freehand (F)">✎</button>
+                            <button onclick="setAnnotationMode('text')" class="${annotationMode === 'text' ? 'active' : ''}" title="Add Note (T)">T</button>
+                            <div class="separator"></div>
+                            <input type="color" class="color-picker" value="${annotationColor}" onchange="setAnnotationColor(this.value)" title="Color">
+                            <select onchange="setAnnotationSize(this.value)" title="Line Width">
+                                <option value="2" ${annotationSize == 2 ? 'selected' : ''}>Thin</option>
+                                <option value="3" ${annotationSize == 3 ? 'selected' : ''}>Medium</option>
+                                <option value="5" ${annotationSize == 5 ? 'selected' : ''}>Thick</option>
+                                <option value="8" ${annotationSize == 8 ? 'selected' : ''}>Bold</option>
+                            </select>
+                            <div class="separator"></div>
+                            <button onclick="undoAnnotation('${escapeAttr(asset.key)}')" title="Undo (Cmd+Z)">↩</button>
+                            <button onclick="clearAnnotations('${escapeAttr(asset.key)}')" title="Clear All">✕</button>
+                        </div>
+                        <img id="annotateImg" src="${escapeAttr(assetUrl)}" alt="${escapeAttr(asset.name)}" onload="initAnnotationCanvas()" style="transform: scale(${canvasZoom}); transform-origin: center;">
                         <canvas id="annotateCanvas" class="annotate-canvas"></canvas>
+                        <div class="canvas-zoom">
+                            <button onclick="zoomCanvas(-0.25)">−</button>
+                            <span id="zoomLevel">${Math.round(canvasZoom * 100)}%</span>
+                            <button onclick="zoomCanvas(0.25)">+</button>
+                            <button onclick="resetZoom()" title="Reset">⟲</button>
+                        </div>
                     </div>
                 `;
             }
@@ -1525,6 +3323,8 @@
                     </div>
                 `;
             } else if (asset.reviewType === 'narrative') {
+                const hintDifficulty = state.hintDifficulty || '';
+                const hintProgression = state.hintProgression || '';
                 typeSpecificHtml = `
                     <div class="feedback-section">
                         <h3>Narrative Details</h3>
@@ -1537,6 +3337,76 @@
                             <label>Lore References:</label>
                             <input type="text" placeholder="Related lore entries to check..."
                                    value="${escapeAttr(loreRefs)}" data-key="${safeKeyForType}" data-field="loreRefs">
+                        </div>
+                        ${asset.contentType === 'hint' ? `
+                        <div class="field-row">
+                            <label>Hint Difficulty:</label>
+                            <select data-key="${safeKeyForType}" data-field="hintDifficulty">
+                                <option value="">— Select —</option>
+                                <option value="too-easy" ${hintDifficulty === 'too-easy' ? 'selected' : ''}>Too Easy</option>
+                                <option value="good" ${hintDifficulty === 'good' ? 'selected' : ''}>Just Right</option>
+                                <option value="too-hard" ${hintDifficulty === 'too-hard' ? 'selected' : ''}>Too Hard</option>
+                            </select>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+            } else if (asset.reviewType === 'lore') {
+                const canonStatus = state.canonStatus || '';
+                const timelineOk = state.timelineOk !== false;
+                typeSpecificHtml = `
+                    <div class="feedback-section">
+                        <h3>Lore Details</h3>
+                        <div class="field-row">
+                            <label>Canon Status:</label>
+                            <select data-key="${safeKeyForType}" data-field="canonStatus">
+                                <option value="">— Select —</option>
+                                <option value="canonical" ${canonStatus === 'canonical' ? 'selected' : ''}>Canonical</option>
+                                <option value="draft" ${canonStatus === 'draft' ? 'selected' : ''}>Draft / WIP</option>
+                                <option value="deprecated" ${canonStatus === 'deprecated' ? 'selected' : ''}>Deprecated</option>
+                            </select>
+                        </div>
+                        <div class="field-row">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" ${timelineOk ? 'checked' : ''}
+                                       data-key="${safeKeyForType}" data-field="timelineOk">
+                                Timeline consistent
+                            </label>
+                        </div>
+                        <div class="field-row">
+                            <label>Related Entries:</label>
+                            <input type="text" placeholder="Other lore entries that reference this..."
+                                   value="${escapeAttr(loreRefs)}" data-key="${safeKeyForType}" data-field="loreRefs">
+                        </div>
+                    </div>
+                `;
+            } else if (asset.reviewType === 'vocal') {
+                const deliveryStyle = state.deliveryStyle || '';
+                const emotionMatch = state.emotionMatch !== false;
+                const pronunciationNotes = state.pronunciationNotes || '';
+                typeSpecificHtml = `
+                    <div class="feedback-section">
+                        <h3>Vocal Details</h3>
+                        <div class="field-row">
+                            <label>Delivery Style:</label>
+                            <select data-key="${safeKeyForType}" data-field="deliveryStyle">
+                                <option value="">— Select —</option>
+                                <option value="good" ${deliveryStyle === 'good' ? 'selected' : ''}>Good</option>
+                                <option value="needs-work" ${deliveryStyle === 'needs-work' ? 'selected' : ''}>Needs Work</option>
+                                <option value="re-record" ${deliveryStyle === 're-record' ? 'selected' : ''}>Re-record</option>
+                            </select>
+                        </div>
+                        <div class="field-row">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" ${emotionMatch ? 'checked' : ''}
+                                       data-key="${safeKeyForType}" data-field="emotionMatch">
+                                Emotion matches character
+                            </label>
+                        </div>
+                        <div class="field-row">
+                            <label>Pronunciation Notes:</label>
+                            <input type="text" placeholder="Words that need correction..."
+                                   value="${escapeAttr(pronunciationNotes)}" data-key="${safeKeyForType}" data-field="pronunciationNotes">
                         </div>
                     </div>
                 `;
@@ -1554,9 +3424,12 @@
                     ${asset.dimensions ? `<div><strong>Size:</strong> ${escapeHtml(asset.dimensions)}</div>` : ''}
                     <div><strong>Build:</strong> ${escapeHtml(manifest.generated.split('T')[0])}</div>
                     <div><strong>Hash:</strong> ${escapeHtml(asset.hash || '—')}</div>
-                    ${!isAudio ? `<div style="margin-top:0.5rem;" id="annotationInfo">
+                    ${asset.reviewType === 'art' ? `<div style="margin-top:0.5rem;" id="annotationInfo">
                         <span style="color:var(--orange)">📍 ${annotations.length} annotation${annotations.length !== 1 ? 's' : ''}</span>
                         ${annotations.length > 0 ? `<button class="btn btn-secondary" style="font-size:0.75rem;padding:0.3rem 0.6rem;margin-left:0.5rem;" onclick="exportAnnotatedImage()">📥 Export</button>` : '<small style="color:var(--fg-dim);margin-left:0.5rem;">(draw on image to mark issues)</small>'}
+                    </div>` : ''}
+                    ${asset.text ? `<div style="margin-top:0.5rem;">
+                        <span style="color:var(--aqua)">📝 Text content: ${escapeHtml((asset.text || '').substring(0, 50))}${(asset.text || '').length > 50 ? '...' : ''}</span>
                     </div>` : ''}
                 </div>
 
@@ -1771,10 +3644,75 @@
 
         function setAnnotationMode(mode) {
             annotationMode = mode;
-            document.querySelectorAll('.annotate-tools button').forEach((btn, i) => {
-                const modes = ['circle', 'rect', 'arrow'];
-                btn.classList.toggle('active', modes[i] === mode);
+            // Update toolbar buttons
+            document.querySelectorAll('.canvas-toolbar button').forEach(btn => {
+                const btnMode = btn.getAttribute('onclick')?.match(/setAnnotationMode\('(\w+)'\)/)?.[1];
+                if (btnMode) {
+                    btn.classList.toggle('active', btnMode === mode);
+                }
             });
+
+            // Show text prompt if text mode
+            if (mode === 'text') {
+                showToast('Click on image to add a note', 'info');
+            }
+        }
+
+        function setAnnotationColor(color) {
+            annotationColor = color;
+            if (currentCtx) {
+                currentCtx.strokeStyle = color;
+            }
+        }
+
+        function setAnnotationSize(size) {
+            annotationSize = parseInt(size);
+            if (currentCtx) {
+                currentCtx.lineWidth = annotationSize;
+            }
+        }
+
+        function undoAnnotation(key) {
+            if (!reviewState[key] || !reviewState[key].annotations) return;
+            if (reviewState[key].annotations.length === 0) {
+                showToast('Nothing to undo', 'info');
+                return;
+            }
+
+            reviewState[key].annotations.pop();
+            autoSave();
+
+            // Redraw
+            if (currentCtx && currentCanvas) {
+                currentCtx.clearRect(0, 0, currentCanvas.width, currentCanvas.height);
+                redrawAnnotations(reviewState[key].annotations);
+            }
+
+            showToast('Annotation undone', 'info');
+        }
+
+        function zoomCanvas(delta) {
+            canvasZoom = Math.max(0.25, Math.min(3, canvasZoom + delta));
+            const img = document.getElementById('annotateImg');
+            if (img) {
+                img.style.transform = `scale(${canvasZoom})`;
+            }
+            const zoomLabel = document.getElementById('zoomLevel');
+            if (zoomLabel) {
+                zoomLabel.textContent = `${Math.round(canvasZoom * 100)}%`;
+            }
+        }
+
+        function resetZoom() {
+            canvasZoom = 1;
+            const img = document.getElementById('annotateImg');
+            if (img) {
+                img.style.transform = 'scale(1)';
+            }
+            const zoomLabel = document.getElementById('zoomLevel');
+            if (zoomLabel) {
+                zoomLabel.textContent = '100%';
+            }
         }
 
         function getCanvasCoords(e) {
@@ -1789,10 +3727,22 @@
         }
 
         function startDrawing(e) {
+            // Handle text mode - show prompt
+            if (annotationMode === 'text') {
+                const coords = getCanvasCoords(e);
+                showTextAnnotationPrompt(coords.x, coords.y);
+                return;
+            }
+
             isDrawing = true;
             const coords = getCanvasCoords(e);
             startX = coords.x;
             startY = coords.y;
+
+            // Initialize freehand points
+            if (annotationMode === 'freehand') {
+                freehandPoints = [{ x: coords.x, y: coords.y }];
+            }
         }
 
         function draw(e) {
@@ -1806,8 +3756,8 @@
             redrawAnnotations(state.annotations || []);
 
             // Draw current shape in preview
-            currentCtx.strokeStyle = '#fb4934';
-            currentCtx.lineWidth = 3;
+            currentCtx.strokeStyle = annotationColor;
+            currentCtx.lineWidth = annotationSize;
 
             if (annotationMode === 'circle') {
                 const radius = Math.sqrt(Math.pow(coords.x - startX, 2) + Math.pow(coords.y - startY, 2));
@@ -1818,7 +3768,50 @@
                 currentCtx.strokeRect(startX, startY, coords.x - startX, coords.y - startY);
             } else if (annotationMode === 'arrow') {
                 drawArrow(currentCtx, startX, startY, coords.x, coords.y);
+            } else if (annotationMode === 'freehand') {
+                freehandPoints.push({ x: coords.x, y: coords.y });
+                drawFreehand(currentCtx, freehandPoints);
             }
+        }
+
+        function drawFreehand(ctx, points) {
+            if (points.length < 2) return;
+            ctx.beginPath();
+            ctx.moveTo(points[0].x, points[0].y);
+            for (let i = 1; i < points.length; i++) {
+                ctx.lineTo(points[i].x, points[i].y);
+            }
+            ctx.stroke();
+        }
+
+        function showTextAnnotationPrompt(x, y) {
+            const note = prompt('Enter annotation note:');
+            if (!note || !note.trim()) return;
+
+            const asset = filteredAssets[detailIndex];
+            if (!asset) return;
+
+            if (!reviewState[asset.key]) reviewState[asset.key] = {};
+            if (!reviewState[asset.key].annotations) reviewState[asset.key].annotations = [];
+
+            reviewState[asset.key].annotations.push({
+                type: 'text',
+                startX: x,
+                startY: y,
+                text: note.trim(),
+                color: annotationColor,
+                id: Date.now()
+            });
+
+            autoSave();
+
+            // Redraw
+            if (currentCtx && currentCanvas) {
+                currentCtx.clearRect(0, 0, currentCanvas.width, currentCanvas.height);
+                redrawAnnotations(reviewState[asset.key].annotations);
+            }
+
+            showToast('Note added', 'success');
         }
 
         function endDrawing(e) {
@@ -1833,16 +3826,32 @@
             if (!reviewState[asset.key]) reviewState[asset.key] = {};
             if (!reviewState[asset.key].annotations) reviewState[asset.key].annotations = [];
 
-            const annotation = {
-                type: annotationMode,
-                startX, startY,
-                endX: coords.x,
-                endY: coords.y,
-                id: Date.now()
-            };
+            let annotation;
+            if (annotationMode === 'freehand') {
+                annotation = {
+                    type: 'freehand',
+                    points: [...freehandPoints],
+                    color: annotationColor,
+                    size: annotationSize,
+                    id: Date.now()
+                };
+                freehandPoints = [];
+            } else {
+                annotation = {
+                    type: annotationMode,
+                    startX, startY,
+                    endX: coords.x,
+                    endY: coords.y,
+                    color: annotationColor,
+                    size: annotationSize,
+                    id: Date.now()
+                };
+            }
 
             // Only save if significant size (avoid accidental clicks)
-            const dist = Math.sqrt(Math.pow(coords.x - startX, 2) + Math.pow(coords.y - startY, 2));
+            const dist = annotationMode === 'freehand'
+                ? (annotation.points?.length > 5 ? 999 : 0)
+                : Math.sqrt(Math.pow(coords.x - startX, 2) + Math.pow(coords.y - startY, 2));
             if (dist > 10) {
                 reviewState[asset.key].annotations.push(annotation);
                 autoSave();
@@ -1857,29 +3866,55 @@
         function redrawAnnotations(annotations) {
             if (!currentCtx || !annotations) return;
 
-            currentCtx.strokeStyle = '#fb4934';
-            currentCtx.lineWidth = 3;
-
             annotations.forEach((a, i) => {
+                // Use annotation's color/size or defaults
+                currentCtx.strokeStyle = a.color || '#fb4934';
+                currentCtx.lineWidth = a.size || 3;
+                currentCtx.fillStyle = a.color || '#fb4934';
+
                 if (a.type === 'circle') {
                     const radius = Math.sqrt(Math.pow(a.endX - a.startX, 2) + Math.pow(a.endY - a.startY, 2));
                     currentCtx.beginPath();
                     currentCtx.arc(a.startX, a.startY, radius, 0, 2 * Math.PI);
                     currentCtx.stroke();
                     // Number label
-                    currentCtx.fillStyle = '#fb4934';
                     currentCtx.font = 'bold 16px sans-serif';
                     currentCtx.fillText((i + 1).toString(), a.startX - 5, a.startY + 5);
                 } else if (a.type === 'rect') {
                     currentCtx.strokeRect(a.startX, a.startY, a.endX - a.startX, a.endY - a.startY);
-                    currentCtx.fillStyle = '#fb4934';
                     currentCtx.font = 'bold 16px sans-serif';
                     currentCtx.fillText((i + 1).toString(), a.startX + 5, a.startY + 18);
                 } else if (a.type === 'arrow') {
                     drawArrow(currentCtx, a.startX, a.startY, a.endX, a.endY);
-                    currentCtx.fillStyle = '#fb4934';
                     currentCtx.font = 'bold 16px sans-serif';
                     currentCtx.fillText((i + 1).toString(), a.startX - 10, a.startY - 5);
+                } else if (a.type === 'freehand' && a.points) {
+                    drawFreehand(currentCtx, a.points);
+                } else if (a.type === 'text') {
+                    // Draw text note with background
+                    currentCtx.font = 'bold 14px sans-serif';
+                    const text = `${i + 1}. ${a.text}`;
+                    const metrics = currentCtx.measureText(text);
+                    const padding = 6;
+                    const bgHeight = 20;
+
+                    // Background
+                    currentCtx.fillStyle = 'rgba(40, 40, 40, 0.9)';
+                    currentCtx.fillRect(a.startX - padding, a.startY - bgHeight, metrics.width + padding * 2, bgHeight + padding);
+
+                    // Border
+                    currentCtx.strokeStyle = a.color || '#fb4934';
+                    currentCtx.lineWidth = 2;
+                    currentCtx.strokeRect(a.startX - padding, a.startY - bgHeight, metrics.width + padding * 2, bgHeight + padding);
+
+                    // Text
+                    currentCtx.fillStyle = a.color || '#fb4934';
+                    currentCtx.fillText(text, a.startX, a.startY - 4);
+
+                    // Pointer dot
+                    currentCtx.beginPath();
+                    currentCtx.arc(a.startX, a.startY + 8, 4, 0, 2 * Math.PI);
+                    currentCtx.fill();
                 }
             });
         }
@@ -1943,6 +3978,101 @@
             link.download = filename;
             link.href = dataUrl;
             link.click();
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // LORE & VOCAL CONTENT LOADERS
+        // ═══════════════════════════════════════════════════════════════
+
+        async function loadLoreContent(asset) {
+            const container = document.getElementById('loreContent');
+            if (!container) return;
+
+            try {
+                const url = getAssetUrl(asset);
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Failed to load');
+
+                const text = await response.text();
+                // Simple markdown to HTML conversion
+                const html = simpleMarkdownToHtml(text);
+                container.innerHTML = html;
+            } catch (e) {
+                container.innerHTML = `<p style="color:var(--red);">Could not load content: ${escapeHtml(e.message)}</p>`;
+            }
+        }
+
+        async function loadVocalContent(asset) {
+            const container = document.getElementById('vocalContent');
+            if (!container) return;
+
+            try {
+                const url = getAssetUrl(asset);
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Failed to load');
+
+                const text = await response.text();
+                const html = simpleMarkdownToHtml(text);
+                container.innerHTML = html;
+            } catch (e) {
+                container.innerHTML = `<p style="color:var(--red);">Could not load content: ${escapeHtml(e.message)}</p>`;
+            }
+        }
+
+        function simpleMarkdownToHtml(markdown) {
+            // Simple markdown conversion for display
+            let html = escapeHtml(markdown);
+
+            // Headers
+            html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+            html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+            html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+
+            // Bold and italic
+            html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+            html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+
+            // Code blocks
+            html = html.replace(/`([^`]+)`/g, '<code style="background:var(--bg);padding:0.1rem 0.3rem;border-radius:2px;">$1</code>');
+
+            // Lists
+            html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+            html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+
+            // Paragraphs (double newlines)
+            html = html.replace(/\n\n/g, '</p><p>');
+            html = '<p>' + html + '</p>';
+
+            // Clean up empty paragraphs
+            html = html.replace(/<p><\/p>/g, '');
+            html = html.replace(/<p>(<h[123]>)/g, '$1');
+            html = html.replace(/(<\/h[123]>)<\/p>/g, '$1');
+
+            return html;
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // TEXT ISSUE TOGGLE HANDLER
+        // ═══════════════════════════════════════════════════════════════
+
+        function toggleTextIssue(key, issue) {
+            if (!reviewState[key]) reviewState[key] = {};
+            if (!reviewState[key].textIssues) reviewState[key].textIssues = [];
+
+            const idx = reviewState[key].textIssues.indexOf(issue);
+            if (idx >= 0) {
+                reviewState[key].textIssues.splice(idx, 1);
+            } else {
+                reviewState[key].textIssues.push(issue);
+            }
+
+            // Update button visual
+            const btn = document.querySelector(`button[data-issue="${issue}"][data-key="${key}"]`);
+            if (btn) {
+                btn.classList.toggle('selected', reviewState[key].textIssues.includes(issue));
+            }
+
+            autoSave();
         }
 
         // ═══════════════════════════════════════════════════════════════
@@ -2091,7 +4221,7 @@
             document.getElementById('submitBtn').disabled = (revision + flagged) === 0;
 
             // Update type counts
-            const typeCounts = { art: 0, audio: 0, narrative: 0 };
+            const typeCounts = { art: 0, audio: 0, narrative: 0, lore: 0, vocal: 0 };
             filteredAssets.forEach(a => typeCounts[a.reviewType]++);
             for (const [type, count] of Object.entries(typeCounts)) {
                 const el = document.getElementById(`type-count-${type}`);
@@ -2180,14 +4310,26 @@
                             assignee: state.assignee || '',
                             dependencies: state.dependencies || '',
                             needsMultipleApproval: state.needsMultipleApproval || false,
-                            // Type-specific
+                            // Type-specific - Audio
                             volumeLevel: state.volumeLevel || '',
                             loopQuality: state.loopQuality || '',
                             fadeNotes: state.fadeNotes || '',
+                            // Type-specific - Art
                             paletteOk: state.paletteOk,
                             variantsNeeded: state.variantsNeeded || '',
+                            // Type-specific - Narrative
                             characterVoice: state.characterVoice || '',
                             loreRefs: state.loreRefs || '',
+                            textIssues: state.textIssues || [],
+                            hintDifficulty: state.hintDifficulty || '',
+                            text: asset.text || '',
+                            // Type-specific - Lore
+                            canonStatus: state.canonStatus || '',
+                            timelineOk: state.timelineOk,
+                            // Type-specific - Vocal
+                            deliveryStyle: state.deliveryStyle || '',
+                            emotionMatch: state.emotionMatch,
+                            pronunciationNotes: state.pronunciationNotes || '',
                             // Annotations
                             annotations: state.annotations || []
                         });
@@ -2241,6 +4383,19 @@
                     } else if (type === 'narrative') {
                         if (issue.characterVoice) body += `**Character:** ${escapeMarkdown(issue.characterVoice)}\n`;
                         if (issue.loreRefs) body += `**Lore Refs:** ${escapeMarkdown(issue.loreRefs)}\n`;
+                        if (issue.textIssues && issue.textIssues.length) body += `**Text Issues:** ${escapeMarkdown(issue.textIssues.join(', '))}\n`;
+                        if (issue.hintDifficulty) body += `**Hint Difficulty:** ${escapeMarkdown(issue.hintDifficulty)}\n`;
+                        if (issue.text) body += `\n**Text Content:**\n> ${escapeMarkdown(issue.text.substring(0, 200))}${issue.text.length > 200 ? '...' : ''}\n`;
+                    } else if (type === 'lore') {
+                        if (issue.canonStatus) body += `**Canon Status:** ${escapeMarkdown(issue.canonStatus)}\n`;
+                        if (issue.timelineOk === false) body += `**Timeline:** ⚠️ Inconsistent\n`;
+                        if (issue.loreRefs) body += `**Related Entries:** ${escapeMarkdown(issue.loreRefs)}\n`;
+                        if (issue.textIssues && issue.textIssues.length) body += `**Issues:** ${escapeMarkdown(issue.textIssues.join(', '))}\n`;
+                    } else if (type === 'vocal') {
+                        if (issue.deliveryStyle) body += `**Delivery:** ${escapeMarkdown(issue.deliveryStyle)}\n`;
+                        if (issue.emotionMatch === false) body += `**Emotion:** ⚠️ Doesn't match character\n`;
+                        if (issue.pronunciationNotes) body += `**Pronunciation:** ${escapeMarkdown(issue.pronunciationNotes)}\n`;
+                        if (issue.textIssues && issue.textIssues.length) body += `**Issues:** ${escapeMarkdown(issue.textIssues.join(', '))}\n`;
                     }
 
                     // Include annotations if present (art assets)
@@ -2325,6 +4480,41 @@
                 if (key && priority) {
                     setField(key, 'priority', priority);
                     renderDetailView();
+                }
+                return;
+            }
+
+            // Handle text issue buttons (narrative/lore/vocal content)
+            const textIssueBtn = e.target.closest('.text-issues button[data-issue][data-key]');
+            if (textIssueBtn) {
+                const key = textIssueBtn.dataset.key;
+                const issue = textIssueBtn.dataset.issue;
+                if (key && issue) {
+                    toggleTextIssue(key, issue);
+                }
+                return;
+            }
+
+            // Handle flavor card verdicts
+            const miniVerdictBtn = e.target.closest('.mini-verdict button');
+            if (miniVerdictBtn) {
+                const card = miniVerdictBtn.closest('.flavor-card');
+                if (card && card.dataset.key) {
+                    const key = card.dataset.key;
+                    let verdict = 'approved';
+                    if (miniVerdictBtn.classList.contains('flag')) verdict = 'flagged';
+                    if (miniVerdictBtn.classList.contains('reject')) verdict = 'needs-revision';
+
+                    if (!reviewState[key]) reviewState[key] = {};
+                    reviewState[key].verdict = verdict;
+
+                    // Update card visual
+                    card.className = `flavor-card ${verdict === 'approved' ? 'approved' : verdict === 'flagged' ? 'flagged' : 'rejected'}`;
+                    card.querySelectorAll('.mini-verdict button').forEach(b => b.classList.remove('selected'));
+                    miniVerdictBtn.classList.add('selected');
+
+                    updateStats();
+                    autoSave();
                 }
                 return;
             }

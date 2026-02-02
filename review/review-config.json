@@ -84,6 +84,17 @@
       "description": "Canon consistency, world-building",
       "automatedChecks": ["name-references", "timeline-check"],
       "humanChecks": ["consistency", "contradictions", "gaps", "depth"]
+    },
+    "vocal": {
+      "name": "Vocal Review",
+      "agent": "Echo",
+      "glyph": "♬",
+      "color": "#458588",
+      "labels": ["vocal-review", "echo-queue"],
+      "template": "vocal-review",
+      "description": "Voice lines, vocal direction, character voice notes",
+      "automatedChecks": ["format", "duration"],
+      "humanChecks": ["delivery", "emotion", "character match", "pronunciation", "pacing"]
     }
   },
   "assetSources": {
@@ -116,6 +127,11 @@
           "reviewType": "audio",
           "pattern": "*.ogg"
         },
+        "campaign_narrative": {
+          "path": "content/adventures/dread_citadel/",
+          "reviewType": "narrative",
+          "pattern": "campaign.json"
+        },
         "encounters": {
           "path": "content/adventures/dread_citadel/encounters/",
           "reviewType": "narrative",
@@ -125,6 +141,21 @@
           "path": "content/dialogues/",
           "reviewType": "narrative",
           "pattern": "*.yaml"
+        },
+        "lore": {
+          "path": "cipher-circle/stories/",
+          "reviewType": "lore",
+          "pattern": "*.md"
+        },
+        "chronicles": {
+          "path": "cipher-circle/chronicles/",
+          "reviewType": "lore",
+          "pattern": "*.md"
+        },
+        "voice_guides": {
+          "path": "cipher-circle/",
+          "reviewType": "vocal",
+          "pattern": "*voice*.md"
         }
       }
     },
@@ -133,29 +164,79 @@
       "basePath": "/Users/petermckernan/Projects/HashChampions",
       "categories": {
         "hero": {
-          "path": "public/images/hero/",
+          "path": "assets/images/hero/",
           "reviewType": "art",
           "pattern": "*.png"
         },
         "leaderboard": {
-          "path": "public/images/leaderboard/",
+          "path": "assets/images/leaderboard/",
           "reviewType": "art",
           "pattern": "*.png"
         },
         "ranks": {
-          "path": "public/images/icons/ranks/",
+          "path": "assets/images/icons/ranks/",
           "reviewType": "art",
           "pattern": "*.png"
         },
         "achievements": {
-          "path": "public/images/icons/achievements/",
+          "path": "assets/images/icons/achievements/",
           "reviewType": "art",
           "pattern": "*.png"
         },
         "profile": {
-          "path": "public/images/profile/",
+          "path": "assets/images/profile/",
           "reviewType": "art",
           "pattern": "*.png"
+        },
+        "characters": {
+          "path": "assets/images/characters/",
+          "reviewType": "art",
+          "pattern": "**/*.png"
+        },
+        "scenes": {
+          "path": "assets/images/scenes/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "sprites": {
+          "path": "assets/images/sprites/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "ui": {
+          "path": "assets/images/ui/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "equipment": {
+          "path": "assets/images/icons/equipment/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "badges": {
+          "path": "assets/images/icons/badges/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "special": {
+          "path": "assets/images/special/",
+          "reviewType": "art",
+          "pattern": "*.png"
+        },
+        "flavor_text": {
+          "path": "content/narrative/",
+          "reviewType": "narrative",
+          "pattern": "flavor_text.json"
+        },
+        "weekly_themes": {
+          "path": "content/narrative/",
+          "reviewType": "narrative",
+          "pattern": "weekly_themes.json"
+        },
+        "review_music": {
+          "path": "assets/review/music/",
+          "reviewType": "audio",
+          "pattern": "*.mp3"
         }
       }
     }
