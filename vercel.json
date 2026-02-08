@@ -1,5 +1,18 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?!hashtopia\\.org|.*\\.hashtopia\\.org|localhost).*"
+        }
+      ],
+      "destination": "https://hashtopia.org/$1",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
